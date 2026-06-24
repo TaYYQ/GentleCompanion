@@ -1,14 +1,29 @@
-# GentleCompanion （温柔点）
+# GentleCompanion · 温柔点
 
-> 为现代都市人打造的 macOS 心理健康陪伴应用  
-> 用温柔的话语、舒缓的界面、实用的工具，帮你缓解压力、找回节奏。
+> A gentle mental wellness companion for modern city dwellers.  
+> 为都市人打造的 macOS 心理健康陪伴应用——用温柔的话语、舒缓的界面、实用的工具，帮你缓解压力、找回内心的节奏。
 
 <p align="center">
   <img src="https://img.shields.io/badge/platform-macOS%2014.0%2B-lightgrey" alt="Platform">
   <img src="https://img.shields.io/badge/Swift-6.0-orange" alt="Swift">
   <img src="https://img.shields.io/badge/UI-SwiftUI-blue" alt="SwiftUI">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+  <img src="https://img.shields.io/badge/stars-⭐%20star%20to%20support-brightgreen" alt="Stars">
 </p>
+
+## 📸 应用截图
+
+<p align="center">
+  <em>（请替换为你的实际截图）</em>
+  <br>
+  <sub>建议录制 GIF：主界面 | 番茄钟动效 | 呼吸粒子动画 | 温柔墙</sub>
+</p>
+
+| 情绪陪伴 | 番茄钟 | 呼吸练习 |
+|:---:|:---:|:---:|
+| ![emotion](screenshots/emotion.png) | ![pomodoro](screenshots/pomodoro.png) | ![breathing](screenshots/breathing.png) |
+| **泡泡解压** | **花园物语** | **温柔墙** |
+| ![bubble](screenshots/bubble.png) | ![garden](screenshots/garden.png) | ![wall](screenshots/wall.png) |
 
 ---
 
@@ -121,10 +136,10 @@ GentleCompanion/
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/GentleCompanion.git
+git clone https://github.com/TaYYQ/GentleCompanion.git
 cd GentleCompanion
 
-# 打开项目
+# 在 Xcode 中打开项目
 open GentleCompanion/
 
 # 使用 SPM 构建
