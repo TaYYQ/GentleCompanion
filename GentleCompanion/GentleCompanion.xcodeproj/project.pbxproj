@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C30E5A29E8C05D0054451D /* GentleCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E5929E8C05D0054451D /* GentleCompanionApp.swift */; };
+		00C30E5C29E8C05D0054451D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E5B29E8C05D0054451D /* ContentView.swift */; };
+		00C30E5E29E8C05D0054451D /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E5D29E8C05D0054451D /* Design.swift */; };
+		00C30E6029E8C05D0054451D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E5F29E8C05D0054451D /* Extensions.swift */; };
+		00C30E6229E8C05D0054451D /* Models/Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6129E8C05D0054451D /* Models/Emotion.swift */; };
+		00C30E6429E8C05D0054451D /* Models/AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6329E8C05D0054451D /* Models/AccountManager.swift */; };
+		00C30E6629E8C05D0054451D /* Models/AppMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6529E8C05D0054451D /* Models/AppMode.swift */; };
+		00C30E6829E8C05D0054451D /* Models/GentleWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6729E8C05D0054451D /* Models/GentleWall.swift */; };
+		00C30E6A29E8C05D0054451D /* Models/NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6929E8C05D0054451D /* Models/NetworkService.swift */; };
+		00C30E6C29E8C05D0054451D /* Models/Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6B29E8C05D0054451D /* Models/Settings.swift */; };
+		00C30E6E29E8C05D0054451D /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
+		00C30E7029E8C05D0054451D /* Views/ActivationFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6F29E8C05D0054451D /* Views/ActivationFlowView.swift */; };
+		00C30E7229E8C05D0054451D /* Views/AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E7129E8C05D0054451D /* Views/AuthView.swift */; };
+		00C30E7429E8C05D0054451D /* Views/AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E7329E8C05D0054451D /* Views/AccountView.swift */; };
+		00C30E7629E8C05D0054451D /* Views/GentleWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E7529E8C05D0054451D /* Views/GentleWallView.swift */; };
+		00C30E7829E8C05D0054451D /* Views/MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E7729E8C05D0054451D /* Views/MainView.swift */; };
+		00C30E7A29E8C05D0054451D /* Views/NewMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E7929E8C05D0054451D /* Views/NewMainView.swift */; };
+		00C30E7C29E8C05D0054451D /* Views/ModeSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E7B29E8C05D0054451D /* Views/ModeSwitchView.swift */; };
+		00C30E7E29E8C05D0054451D /* Views/EntertainmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E7D29E8C05D0054451D /* Views/EntertainmentView.swift */; };
+		00C30E8029E8C05D0054451D /* Views/MoodQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E7F29E8C05D0054451D /* Views/MoodQuestionView.swift */; };
+		00C30E8229E8C05D0054451D /* Views/BubblePopGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8129E8C05D0054451D /* Views/BubblePopGame.swift */; };
+		00C30E8429E8C05D0054451D /* Views/GardenGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8329E8C05D0054451D /* Views/GardenGame.swift */; };
+		00C30E8629E8C05D0054451D /* Views/RhythmGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8529E8C05D0054451D /* Views/RhythmGame.swift */; };
+		00C30E8829E8C05D0054451D /* Views/EfficiencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8729E8C05D0054451D /* Views/EfficiencyView.swift */; };
+		00C30E8A29E8C05D0054451D /* Views/SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8929E8C05D0054451D /* Views/SocialView.swift */; };
+		00C30E8C29E8C05D0054451D /* Views/PomodoroSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8B29E8C05D0054451D /* Views/PomodoroSubviews.swift */; };
+		00C30E8E29E8C05D0054451D /* Views/PomodoroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8D29E8C05D0054451D /* Views/PomodoroView.swift */; };
+		00C30E9029E8C05D0054451D /* Views/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */; };
+		00C30E9229E8C05D0054451D /* Views/SocialFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9129E8C05D0054451D /* Views/SocialFeedView.swift */; };
+		00C30E9429E8C05D0054451D /* Views/SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9329E8C05D0054451D /* Views/SplashView.swift */; };
+		00C30E9629E8C05D0054451D /* Views/TimeModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9529E8C05D0054451D /* Views/TimeModeView.swift */; };
+		00C30E9829E8C05D0054451D /* Views/ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9729E8C05D0054451D /* Views/ProfileView.swift */; };
+		00C30E9A29E8C05D0054451D /* Views/BreathingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9929E8C05D0054451D /* Views/BreathingView.swift */; };
+		00C30E9C29E8C05D0054451D /* Views/ActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9B29E8C05D0054451D /* Views/ActivationView.swift */; };
+		00C30E9E29E8C05D0054451D /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
+		00C30EA029E8C05D0054451D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C30E9F29E8C05D0054451D /* Assets.xcassets */; };
+		093206309C5082E78C6EE0A3 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E5D29E8C05D0054451D /* Design.swift */; };
+		353DF1D92A96F9E87ED1C36B /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
+		3FA760B51A196FE82AA5026B /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
+		92CBFD41272EED5DB0E01D74 /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
+		EE9E0BC8324591220A06A273 /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
+		F9F422A2CDC5294CDBF3D502 /* Views/SocialFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9129E8C05D0054451D /* Views/SocialFeedView.swift */; };
+		RES00001000000000000001 /* Resources/壁炉.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = RES00002000000000000001 /* Resources/壁炉.mp3 */; };
+		RES00002000000000000002 /* Resources/风声.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = RES00003000000000000002 /* Resources/风声.mp3 */; };
+		RES00003000000000000003 /* Resources/海浪.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = RES00004000000000000003 /* Resources/海浪.mp3 */; };
+		RES00004000000000000004 /* Resources/雨声.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = RES00005000000000000004 /* Resources/雨声.mp3 */; };
+		RES00005000000000000005 /* Resources/AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = RES00006000000000000005 /* Resources/AppIcon.png */; };
+		RES00006000000000000006 /* Resources/AppIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = RES00007000000000000006 /* Resources/AppIcon.svg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00C30E5929E8C05D0054451D /* GentleCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentleCompanionApp.swift; sourceTree = "<group>"; };
+		00C30E5B29E8C05D0054451D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00C30E5D29E8C05D0054451D /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		00C30E5F29E8C05D0054451D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		00C30E6129E8C05D0054451D /* Models/Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Emotion.swift; sourceTree = "<group>"; };
+		00C30E6329E8C05D0054451D /* Models/AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/AccountManager.swift; sourceTree = "<group>"; };
+		00C30E6529E8C05D0054451D /* Models/AppMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/AppMode.swift; sourceTree = "<group>"; };
+		00C30E6729E8C05D0054451D /* Models/GentleWall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/GentleWall.swift; sourceTree = "<group>"; };
+		00C30E6929E8C05D0054451D /* Models/NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/NetworkService.swift; sourceTree = "<group>"; };
+		00C30E6B29E8C05D0054451D /* Models/Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Settings.swift; sourceTree = "<group>"; };
+		00C30E6D29E8C05D0054451D /* Models/SocialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/SocialService.swift; sourceTree = "<group>"; };
+		00C30E6F29E8C05D0054451D /* Views/ActivationFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ActivationFlowView.swift; sourceTree = "<group>"; };
+		00C30E7129E8C05D0054451D /* Views/AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/AuthView.swift; sourceTree = "<group>"; };
+		00C30E7329E8C05D0054451D /* Views/AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/AccountView.swift; sourceTree = "<group>"; };
+		00C30E7529E8C05D0054451D /* Views/GentleWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/GentleWallView.swift; sourceTree = "<group>"; };
+		00C30E7729E8C05D0054451D /* Views/MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/MainView.swift; sourceTree = "<group>"; };
+		00C30E7929E8C05D0054451D /* Views/NewMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/NewMainView.swift; sourceTree = "<group>"; };
+		00C30E7B29E8C05D0054451D /* Views/ModeSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ModeSwitchView.swift; sourceTree = "<group>"; };
+		00C30E7D29E8C05D0054451D /* Views/EntertainmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/EntertainmentView.swift; sourceTree = "<group>"; };
+		00C30E7F29E8C05D0054451D /* Views/MoodQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/MoodQuestionView.swift; sourceTree = "<group>"; };
+		00C30E8129E8C05D0054451D /* Views/BubblePopGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/BubblePopGame.swift; sourceTree = "<group>"; };
+		00C30E8329E8C05D0054451D /* Views/GardenGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/GardenGame.swift; sourceTree = "<group>"; };
+		00C30E8529E8C05D0054451D /* Views/RhythmGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/RhythmGame.swift; sourceTree = "<group>"; };
+		00C30E8729E8C05D0054451D /* Views/EfficiencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/EfficiencyView.swift; sourceTree = "<group>"; };
+		00C30E8929E8C05D0054451D /* Views/SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SocialView.swift; sourceTree = "<group>"; };
+		00C30E8B29E8C05D0054451D /* Views/PomodoroSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/PomodoroSubviews.swift; sourceTree = "<group>"; };
+		00C30E8D29E8C05D0054451D /* Views/PomodoroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/PomodoroView.swift; sourceTree = "<group>"; };
+		00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SettingsView.swift; sourceTree = "<group>"; };
+		00C30E9129E8C05D0054451D /* Views/SocialFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SocialFeedView.swift; sourceTree = "<group>"; };
+		00C30E9329E8C05D0054451D /* Views/SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SplashView.swift; sourceTree = "<group>"; };
+		00C30E9529E8C05D0054451D /* Views/TimeModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/TimeModeView.swift; sourceTree = "<group>"; };
+		00C30E9729E8C05D0054451D /* Views/ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ProfileView.swift; sourceTree = "<group>"; };
+		00C30E9929E8C05D0054451D /* Views/BreathingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/BreathingView.swift; sourceTree = "<group>"; };
+		00C30E9B29E8C05D0054451D /* Views/ActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ActivationView.swift; sourceTree = "<group>"; };
+		00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/GentleMainView.swift; sourceTree = "<group>"; };
+		00C30E9F29E8C05D0054451D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9490F648B2BBE63FF58BAC0F /* GentleCompanion.entitlements */ = {isa = PBXFileReference; explicitFileType = text.plist.entitlements; lastKnownFileType = text.plist.entitlements; name = GentleCompanion.entitlements; path = GentleCompanion.entitlements; sourceTree = SOURCE_ROOT; };
+		DC811C48A7FA24EF6463D498 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
+		RES00002000000000000001 /* Resources/壁炉.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Resources/壁炉.mp3"; sourceTree = "<group>"; };
+		RES00003000000000000002 /* Resources/风声.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Resources/风声.mp3"; sourceTree = "<group>"; };
+		RES00004000000000000003 /* Resources/海浪.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Resources/海浪.mp3"; sourceTree = "<group>"; };
+		RES00005000000000000004 /* Resources/雨声.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Resources/雨声.mp3"; sourceTree = "<group>"; };
+		RES00006000000000000005 /* Resources/AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Resources/AppIcon.png; sourceTree = "<group>"; };
+		RES00007000000000000006 /* Resources/AppIcon.svg */ = {isa = PBXFileReference; lastKnownFileType = image.svg; path = Resources/AppIcon.svg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00C30E4829E8C05D0054451D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00C30E3C29E8C05D0054451D /* /Users/ztc/Desktop/APP 2/GentleCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				00C30E3E29E8C05D0054451D /* GentleCompanion */,
+				00C30EA829E8C05D0054451D /* Products */,
+				DC811C48A7FA24EF6463D498 /* Package.swift */,
+				9490F648B2BBE63FF58BAC0F /* GentleCompanion.entitlements */,
+				00C30E5D29E8C05D0054451D /* Design.swift */,
+				00C30E6D29E8C05D0054451D /* Models/SocialService.swift */,
+				00C30E9129E8C05D0054451D /* Views/SocialFeedView.swift */,
+			);
+			path = "/Users/ztc/Desktop/APP 2/GentleCompanion";
+			sourceTree = "<absolute>";
+		};
+		00C30E3E29E8C05D0054451D /* GentleCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				00C30E4029E8C05D0054451D /* Models */,
+				00C30E4229E8C05D0054451D /* Views */,
+				RESGROUP1000000000000001 /* Resources */,
+				00C30E5929E8C05D0054451D /* GentleCompanionApp.swift */,
+				00C30E5B29E8C05D0054451D /* ContentView.swift */,
+				00C30E5D29E8C05D0054451D /* Design.swift */,
+				00C30E5F29E8C05D0054451D /* Extensions.swift */,
+				00C30E9F29E8C05D0054451D /* Assets.xcassets */,
+			);
+			name = GentleCompanion;
+			sourceTree = "<group>";
+		};
+		00C30E4029E8C05D0054451D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00C30E6129E8C05D0054451D /* Models/Emotion.swift */,
+				00C30E6329E8C05D0054451D /* Models/AccountManager.swift */,
+				00C30E6529E8C05D0054451D /* Models/AppMode.swift */,
+				00C30E6729E8C05D0054451D /* Models/GentleWall.swift */,
+				00C30E6929E8C05D0054451D /* Models/NetworkService.swift */,
+				00C30E6B29E8C05D0054451D /* Models/Settings.swift */,
+				00C30E6D29E8C05D0054451D /* Models/SocialService.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		00C30E4229E8C05D0054451D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00C30E6F29E8C05D0054451D /* Views/ActivationFlowView.swift */,
+				00C30E7129E8C05D0054451D /* Views/AuthView.swift */,
+				00C30E7329E8C05D0054451D /* Views/AccountView.swift */,
+				00C30E7529E8C05D0054451D /* Views/GentleWallView.swift */,
+				00C30E7729E8C05D0054451D /* Views/MainView.swift */,
+				00C30E7929E8C05D0054451D /* Views/NewMainView.swift */,
+				00C30E7B29E8C05D0054451D /* Views/ModeSwitchView.swift */,
+				00C30E7D29E8C05D0054451D /* Views/EntertainmentView.swift */,
+				00C30E7F29E8C05D0054451D /* Views/MoodQuestionView.swift */,
+				00C30E8129E8C05D0054451D /* Views/BubblePopGame.swift */,
+				00C30E8329E8C05D0054451D /* Views/GardenGame.swift */,
+				00C30E8529E8C05D0054451D /* Views/RhythmGame.swift */,
+				00C30E8729E8C05D0054451D /* Views/EfficiencyView.swift */,
+				00C30E8929E8C05D0054451D /* Views/SocialView.swift */,
+				00C30E8B29E8C05D0054451D /* Views/PomodoroSubviews.swift */,
+				00C30E8D29E8C05D0054451D /* Views/PomodoroView.swift */,
+				00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */,
+				00C30E9129E8C05D0054451D /* Views/SocialFeedView.swift */,
+				00C30E9329E8C05D0054451D /* Views/SplashView.swift */,
+				00C30E9529E8C05D0054451D /* Views/TimeModeView.swift */,
+				00C30E9729E8C05D0054451D /* Views/ProfileView.swift */,
+				00C30E9929E8C05D0054451D /* Views/BreathingView.swift */,
+				00C30E9B29E8C05D0054451D /* Views/ActivationView.swift */,
+				00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		00C30EA829E8C05D0054451D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		RESGROUP1000000000000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				RES00002000000000000001 /* Resources/壁炉.mp3 */,
+				RES00003000000000000002 /* Resources/风声.mp3 */,
+				RES00004000000000000003 /* Resources/海浪.mp3 */,
+				RES00005000000000000004 /* Resources/雨声.mp3 */,
+				RES00006000000000000005 /* Resources/AppIcon.png */,
+				RES00007000000000000006 /* Resources/AppIcon.svg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00C30E4429E8C05D0054451D /* GentleCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C30EA929E8C05D0054451D /* Build configuration list for PBXNativeTarget "GentleCompanion" */;
+			buildPhases = (
+				00C30E4629E8C05D0054451D /* Sources */,
+				00C30E4829E8C05D0054451D /* Frameworks */,
+				00C30E4A29E8C05D0054451D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GentleCompanion;
+			productName = GentleCompanion;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00C30E3B29E8C05D0054451D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1560;
+				LastUpgradeCheck = 1560;
+				TargetAttributes = {
+					00C30E4429E8C05D0054451D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 00C30EA729E8C05D0054451D /* Build configuration list for PBXProject "GentleCompanion" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				zh_CN,
+				en,
+			);
+			mainGroup = 00C30E3C29E8C05D0054451D /* /Users/ztc/Desktop/APP 2/GentleCompanion */;
+			productRefGroup = 00C30EA829E8C05D0054451D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00C30E4429E8C05D0054451D /* GentleCompanion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00C30E4A29E8C05D0054451D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C30EA029E8C05D0054451D /* Assets.xcassets in Resources */,
+				RES00001000000000000001 /* Resources/壁炉.mp3 in Resources */,
+				RES00002000000000000002 /* Resources/风声.mp3 in Resources */,
+				RES00003000000000000003 /* Resources/海浪.mp3 in Resources */,
+				RES00004000000000000004 /* Resources/雨声.mp3 in Resources */,
+				RES00005000000000000005 /* Resources/AppIcon.png in Resources */,
+				RES00006000000000000006 /* Resources/AppIcon.svg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00C30E4629E8C05D0054451D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C30E5A29E8C05D0054451D /* GentleCompanionApp.swift in Sources */,
+				00C30E5C29E8C05D0054451D /* ContentView.swift in Sources */,
+				00C30E5E29E8C05D0054451D /* Design.swift in Sources */,
+				00C30E6029E8C05D0054451D /* Extensions.swift in Sources */,
+				00C30E6229E8C05D0054451D /* Models/Emotion.swift in Sources */,
+				00C30E6429E8C05D0054451D /* Models/AccountManager.swift in Sources */,
+				00C30E6629E8C05D0054451D /* Models/AppMode.swift in Sources */,
+				00C30E6829E8C05D0054451D /* Models/GentleWall.swift in Sources */,
+				00C30E6A29E8C05D0054451D /* Models/NetworkService.swift in Sources */,
+				00C30E6C29E8C05D0054451D /* Models/Settings.swift in Sources */,
+				00C30E6E29E8C05D0054451D /* Models/SocialService.swift in Sources */,
+				00C30E7029E8C05D0054451D /* Views/ActivationFlowView.swift in Sources */,
+				00C30E7229E8C05D0054451D /* Views/AuthView.swift in Sources */,
+				00C30E7429E8C05D0054451D /* Views/AccountView.swift in Sources */,
+				00C30E7629E8C05D0054451D /* Views/GentleWallView.swift in Sources */,
+				00C30E7829E8C05D0054451D /* Views/MainView.swift in Sources */,
+				00C30E7A29E8C05D0054451D /* Views/NewMainView.swift in Sources */,
+				00C30E7C29E8C05D0054451D /* Views/ModeSwitchView.swift in Sources */,
+				00C30E7E29E8C05D0054451D /* Views/EntertainmentView.swift in Sources */,
+				00C30E8029E8C05D0054451D /* Views/MoodQuestionView.swift in Sources */,
+				00C30E8229E8C05D0054451D /* Views/BubblePopGame.swift in Sources */,
+				00C30E8429E8C05D0054451D /* Views/GardenGame.swift in Sources */,
+				00C30E8629E8C05D0054451D /* Views/RhythmGame.swift in Sources */,
+				00C30E8829E8C05D0054451D /* Views/EfficiencyView.swift in Sources */,
+				00C30E8A29E8C05D0054451D /* Views/SocialView.swift in Sources */,
+				00C30E8C29E8C05D0054451D /* Views/PomodoroSubviews.swift in Sources */,
+				00C30E8E29E8C05D0054451D /* Views/PomodoroView.swift in Sources */,
+				00C30E9029E8C05D0054451D /* Views/SettingsView.swift in Sources */,
+				00C30E9229E8C05D0054451D /* Views/SocialFeedView.swift in Sources */,
+				00C30E9429E8C05D0054451D /* Views/SplashView.swift in Sources */,
+				00C30E9629E8C05D0054451D /* Views/TimeModeView.swift in Sources */,
+				00C30E9829E8C05D0054451D /* Views/ProfileView.swift in Sources */,
+				00C30E9A29E8C05D0054451D /* Views/BreathingView.swift in Sources */,
+				00C30E9C29E8C05D0054451D /* Views/ActivationView.swift in Sources */,
+				00C30E9E29E8C05D0054451D /* Views/GentleMainView.swift in Sources */,
+				093206309C5082E78C6EE0A3 /* Design.swift in Sources */,
+				EE9E0BC8324591220A06A273 /* Models/SocialService.swift in Sources */,
+				3FA760B51A196FE82AA5026B /* Models/SocialService.swift in Sources */,
+				F9F422A2CDC5294CDBF3D502 /* Views/SocialFeedView.swift in Sources */,
+				353DF1D92A96F9E87ED1C36B /* Models/SocialService.swift in Sources */,
+				92CBFD41272EED5DB0E01D74 /* Models/SocialService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00C30EAB29E8C05D0054451D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GentleCompanion.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W9G526P4U;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xfrontend -enable-experimental-concurrency";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gentlecompanion.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		00C30EAC29E8C05D0054451D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GentleCompanion.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W9G526P4U;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xfrontend -enable-experimental-concurrency";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gentlecompanion.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		00C30EAD29E8C05D0054451D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SUPPORTED_PLATFORMS = macosx;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00C30EAE29E8C05D0054451D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SUPPORTED_PLATFORMS = macosx;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00C30EA729E8C05D0054451D /* Build configuration list for PBXProject "GentleCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C30EAD29E8C05D0054451D /* Debug */,
+				00C30EAE29E8C05D0054451D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C30EA929E8C05D0054451D /* Build configuration list for PBXNativeTarget "GentleCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C30EAB29E8C05D0054451D /* Debug */,
+				00C30EAC29E8C05D0054451D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00C30E3B29E8C05D0054451D /* Project object */;
+}

@@ -1,0 +1,98 @@
+# ====================
+# macOS / Finder
+# ====================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+
+# ====================
+# Xcode / SPM
+# ====================
+DerivedData/
+build/
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/
+*.xcuserdata
+*.xcbkptlist
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.moved-aside
+*.pbxuser
+*.pyc
+*.o
+*.d
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.app
+*.dmg
+*.timestamp
+*.pcm
+xcuserdata/
+Carthage/
+.swiftpm/
+Package.resolved
+
+# ====================
+# SPM Build Products
+# ====================
+.build/
+
+# ====================
+# Python
+# ====================
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+.venv/
+venv/
+env/
+
+# ====================
+# IDE / Editor
+# ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ====================
+# Build Output
+# ====================
+GentleCompanion.app/
+GentleCompanion.dmg
+InstallDir/
+
+# ====================
+# Secrets / Config
+# ====================
+*.env
+*.env.*
+!*.env.example
+
+# Sensitive config files (use .example.php templates instead)
+php_api_server/config/config.php
+php_api_server/config/database.php
+api.47.96.92.123/
+
+# Deployment scripts (contains server IPs)
+deploy_to_server.sh
+
+# Backup files
+*.bak
+*.bak2
+
+# Sub-project gitignore (not needed)
+GentleCompanion/.gitignore
+
+# ====================
+# Logs
+# ====================
+*.log

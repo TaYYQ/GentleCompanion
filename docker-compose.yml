@@ -1,0 +1,35 @@
+version: '3'
+services:
+  api:
+    build: ./GentleCompanion/backend
+    container_name: gentle_api
+    restart: always
+    ports:
+      - "8000:8000"
+
+  php:
+    image: php:7.4-fpm
+    volumes:
+      - ./php_api_server:/var/www/html
+    ports:
+      - "9000:9000"
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./php_api_server:/var/www/html
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
+    depends_on:
+      - php
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-changeme}
+      MYSQL_DATABASE: gentle_companion
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./php_api_server/database.sql:/docker-entrypoint-initdb.d/database.sql

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg width='1024' height='1024' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'>
+<defs>
+<linearGradient id='gradient' x1='0%' y1='0%' x2='100%' y2='100%'>
+<stop offset='0%' stop-color='#8B5CF6'/>
+<stop offset='100%' stop-color='#F472B6'/>
+</linearGradient>
+<linearGradient id='goldGradient' x1='0%' y1='0%' x2='100%' y2='100%'>
+<stop offset='0%' stop-color='#FFD700'/>
+<stop offset='100%' stop-color='#FFA500'/>
+</linearGradient>
+</defs>
+<circle cx='512' cy='512' r='480' fill='url(#gradient)'/>
+<path d='M512 300 C400 300 320 420 320 520 C320 620 400 680 512 720 C624 680 704 620 704 520 C704 420 624 300 512 300 Z' fill='white' opacity='0.9'/>
+<path d='M512 340 C430 340 380 410 380 480 C380 550 430 600 512 640 C594 600 644 550 644 480 C644 410 594 340 512 340 Z' fill='url(#goldGradient)' opacity='0.8'/>
+</svg>

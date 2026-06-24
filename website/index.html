@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <title>Gentle Companion - 温柔陪伴你的专注时光</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <span class="logo-text">Gentle Companion</span>
+            </div>
+            <nav class="navbar-menu">
+                <!-- 功能下拉菜单 -->
+                <div class="navbar-dropdown">
+                    <a href="#features" class="navbar-link">功能</a>
+                    <div class="navbar-dropdown-content">
+                        <div class="dropdown-section">
+                            <h4>核心功能</h4>
+                            <ul>
+                                <li><a href="#features">番茄钟</a></li>
+                                <li><a href="#features">成就系统</a></li>
+                                <li><a href="#features">天气提醒</a></li>
+                                <li><a href="#features">情绪跟踪</a></li>
+                                <li><a href="#features">统计分析</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 设计下拉菜单 -->
+                <div class="navbar-dropdown">
+                    <a href="#design" class="navbar-link">设计</a>
+                    <div class="navbar-dropdown-content">
+                        <div class="dropdown-section">
+                            <h4>设计理念</h4>
+                            <ul>
+                                <li><a href="#design">玻璃态设计</a></li>
+                                <li><a href="#design">温柔配色</a></li>
+                                <li><a href="#design">流畅动画</a></li>
+                                <li><a href="#design">响应式布局</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 下载下拉菜单 -->
+                <div class="navbar-dropdown">
+                    <a href="#download" class="navbar-link">下载</a>
+                    <div class="navbar-dropdown-content">
+                        <div class="dropdown-section">
+                            <h4>下载选项</h4>
+                            <ul>
+                                <li><a href="#download">macOS 版</a></li>
+                                <li><a href="#download">系统要求</a></li>
+                                <li><a href="#download">安装指南</a></li>
+                                <li><a href="#changelog">更新日志</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 支持下拉菜单 -->
+                <div class="navbar-dropdown">
+                    <a href="#faq" class="navbar-link">支持</a>
+                    <div class="navbar-dropdown-content">
+                        <div class="dropdown-section">
+                            <h4>帮助中心</h4>
+                            <ul>
+                                <li><a href="#faq">常见问题</a></li>
+                                <li><a href="#guide">使用指南</a></li>
+                                <li><a href="#about">关于我们</a></li>
+                                <li><a href="#contact">联系我们</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>法律信息</h4>
+                            <ul>
+                                <li><a href="#privacy">隐私政策</a></li>
+                                <li><a href="#terms">服务条款</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="navbar-actions">
+                <a href="#download" class="btn-download">下载</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">温柔陪伴你的专注时光</h1>
+                    <p class="hero-subtitle">Gentle Companion 是一款专为 macOS 设计的番茄钟应用，结合天气、情绪和成就系统，为你打造个性化的专注体验。</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn-primary">立即下载</a>
+                        <a href="#features" class="btn-secondary">了解更多</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="app-preview">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Gentle%20Companion%20macOS%20app%20interface%20with%20purple%20gradient%20background%20and%20glass%20morphism%20design%2C%20showing%20pomodoro%20timer%20and%20stats%20screen&image_size=landscape_16_9" alt="Gentle Companion 应用预览">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能介绍 -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">精心设计的功能</h2>
+                <p class="section-subtitle">为你的专注时光提供全方位支持</p>
+            </div>
+            <div class="features-grid">
+                <!-- 番茄钟功能 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="feature-title">番茄钟</h3>
+                    <p class="feature-description">个性化的番茄钟计时，支持自定义工作时长、休息时长和长休息时长。每次开始前，你可以设置专注目标，结束后可以对本次专注进行评分，帮助你了解自己的专注状态。系统会自动记录你的专注数据，为你提供详细的统计分析。</p>
+                    <div class="feature-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Pomodoro%20timer%20interface%20with%20purple%20gradient%20background%2C%20showing%20timer%20and%20progress%20bar&image_size=square" alt="番茄钟功能">
+                    </div>
+                </div>
+                <!-- 成就系统 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="feature-title">成就系统</h3>
+                    <p class="feature-description">通过完成番茄钟和保持专注，你可以解锁各种成就。系统内置多种成就，包括完成第一个番茄钟、连续3天完成番茄钟、完成20个番茄钟、累计专注500分钟等。成就系统会记录你的进步，为你提供持续的动力，让专注变得更加有趣和有意义。</p>
+                    <div class="feature-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Achievement%20system%20interface%20with%20stars%20and%20progress%20bars%2C%20purple%20gradient%20background&image_size=square" alt="成就系统">
+                    </div>
+                </div>
+                <!-- 天气功能 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3 class="feature-title">天气提醒</h3>
+                    <p class="feature-description">集成WeatherKit，获取实时天气数据。根据当前天气状况和你的情绪状态，系统会为你提供个性化的温柔提醒和鼓励。无论是晴天、雨天还是多云，都能获得相应的温馨提示，让你的一天更加美好和有动力。</p>
+                    <div class="feature-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Weather%20notification%20interface%20with%20sun%20icon%20and%20gentle%20message%2C%20purple%20gradient%20background&image_size=square" alt="天气功能">
+                    </div>
+                </div>
+                <!-- 情绪跟踪 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="feature-title">情绪跟踪</h3>
+                    <p class="feature-description">记录你的情绪变化，了解情绪与专注之间的关系。系统支持多种情绪状态的记录，包括平静、焦虑、疲惫、空虚等。通过情绪历史记录，你可以发现情绪与专注效率之间的关联，帮助你更好地管理自己的状态，调整工作和休息的节奏。</p>
+                    <div class="feature-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Emotion%20tracking%20interface%20with%20mood%20icons%20and%20history%20chart%2C%20purple%20gradient%20background&image_size=square" alt="情绪跟踪">
+                    </div>
+                </div>
+                <!-- 统计分析 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="feature-title">统计分析</h3>
+                    <p class="feature-description">详细的统计数据和可视化图表，帮助你了解自己的专注习惯和进步情况。系统会记录你的完成次数、专注时长、连续天数、完成率等数据，并通过周统计和每日统计图表直观展示。你还可以查看最近的专注会话，了解自己的专注模式和效率变化。</p>
+                    <div class="feature-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Statistics%20dashboard%20with%20charts%20and%20stats%20cards%2C%20purple%20gradient%20background&image_size=square" alt="统计分析">
+                    </div>
+                </div>
+                <!-- 提醒功能 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3 class="feature-title">温柔提醒</h3>
+                    <p class="feature-description">自定义的提醒功能，帮助你保持专注，同时不忘照顾好自己。你可以设置每日或每周的提醒时间，系统会在指定时间为你发送温柔的提醒消息。提醒内容包括专注提醒、休息提醒和自我照顾提醒，让你在忙碌的工作中也能保持平衡。</p>
+                    <div class="feature-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Notification%20interface%20with%20gentle%20reminder%20message%2C%20purple%20gradient%20background&image_size=square" alt="提醒功能">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户故事 -->
+    <section id="stories" class="stories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">用户故事</h2>
+                <p class="section-subtitle">听听其他用户如何使用Gentle Companion</p>
+            </div>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-avatar">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20woman%20avatar%2C%20friendly%20smile%2C%20minimalist%20style&image_size=square" alt="用户头像">
+                    </div>
+                    <div class="story-content">
+                        <h3 class="story-name">李雨晴</h3>
+                        <p class="story-role">自由设计师</p>
+                        <p class="story-text">"Gentle Companion 彻底改变了我的工作方式。以前我经常会被各种干扰打断，现在通过番茄钟的帮助，我能够保持长时间的专注。成就系统让我更有动力坚持下去，天气提醒功能也给了我很多温暖的鼓励。"</p>
+                        <div class="story-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-avatar">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20man%20avatar%2C%20friendly%20smile%2C%20minimalist%20style&image_size=square" alt="用户头像">
+                    </div>
+                    <div class="story-content">
+                        <h3 class="story-name">王浩然</h3>
+                        <p class="story-role">软件工程师</p>
+                        <p class="story-text">"作为一名程序员，专注是非常重要的。Gentle Companion 的番茄钟功能帮助我保持专注，情绪跟踪功能让我了解自己的状态变化。统计分析功能让我看到自己的进步，成就系统则给了我持续的动力。这是我用过的最好的专注工具之一。"</p>
+                        <div class="story-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-avatar">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Student%20avatar%2C%20friendly%20smile%2C%20minimalist%20style&image_size=square" alt="用户头像">
+                    </div>
+                    <div class="story-content">
+                        <h3 class="story-name">张明</h3>
+                        <p class="story-role">大学生</p>
+                        <p class="story-text">"备考期间，Gentle Companion 帮了我大忙。它不仅帮助我保持专注，还通过成就系统让学习变得更有趣。天气提醒功能在我压力大的时候给了我很多鼓励，情绪跟踪功能让我了解自己的状态变化。现在我已经养成了良好的学习习惯，成绩也有了明显的提高。"</p>
+                        <div class="story-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载指南 -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">下载指南</h2>
+                <p class="section-subtitle">如何获取和安装Gentle Companion</p>
+            </div>
+            <div class="download-content">
+                <div class="download-steps">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 class="step-title">系统要求</h3>
+                            <p class="step-description">确保你的Mac运行macOS 13.0（Ventura）或更高版本。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 class="step-title">下载应用</h3>
+                            <p class="step-description">点击下方的下载按钮，获取Gentle Companion安装包。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 class="step-title">安装应用</h3>
+                            <p class="step-description">打开下载的安装包，将Gentle Companion拖入应用程序文件夹。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 class="step-title">首次启动</h3>
+                            <p class="step-description">首次启动时，系统会引导你完成初始设置，包括番茄钟时长、提醒时间等。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3 class="step-title">开始使用</h3>
+                            <p class="step-description">设置完成后，你就可以开始使用Gentle Companion了。点击开始按钮，开始你的第一个番茄钟。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-cta">
+                    <div class="download-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Gentle%20Companion%20macOS%20app%20icon%20with%20purple%20gradient%20background%2C%20minimalist%20design&image_size=square" alt="Gentle Companion 应用图标">
+                    </div>
+                    <h3 class="download-title">立即下载</h3>
+                    <p class="download-description">获取Gentle Companion，开始你的专注之旅。</p>
+                    <a href="#" class="btn-primary">下载 macOS 版</a>
+                    <p class="download-note">版本 1.0.0 | 大小：25MB | 语言：简体中文, English</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 更新日志 -->
+    <section id="changelog" class="changelog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">更新日志</h2>
+                <p class="section-subtitle">了解Gentle Companion的最新变化</p>
+            </div>
+            <div class="changelog-content">
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <h3 class="changelog-version">版本 1.0.2</h3>
+                        <span class="changelog-date">2026-02-12</span>
+                    </div>
+                    <ul class="changelog-list">
+                        <li>✅ 网站优化：增加视口缩放限制，允许用户放大查看内容</li>
+                        <li>✅ 网站优化：增加容器宽度，从1280px增加到1440px，显示更多内容</li>
+                        <li>✅ 网站优化：增加页面内边距，提升视觉效果</li>
+                        <li>✅ 网站优化：增加Hero区域标题和副标题大小，使内容更加醒目</li>
+                        <li>✅ 网站优化：应用窗口默认大小从700x650调整为850x750，提供更好的用户体验</li>
+                        <li>✅ 性能优化：减少粒子系统数量和更新频率，提高应用运行流畅度</li>
+                        <li>✅ 性能优化：优化呼吸动画参数，减少计算复杂度</li>
+                        <li>✅ 性能优化：优化天气数据获取策略，减少网络请求</li>
+                    </ul>
+                </div>
+                <div class="changelog-item">
+                    <div class="changelog-header">
+                        <h3 class="changelog-version">版本 1.0.0</h3>
+                        <span class="changelog-date">2026-02-12</span>
+                    </div>
+                    <ul class="changelog-list">
+                        <li>✅ 初始版本发布</li>
+                        <li>✅ 番茄钟功能，支持自定义时长和目标设置</li>
+                        <li>✅ 成就系统，包含多种成就类型</li>
+                        <li>✅ 天气提醒功能，集成WeatherKit</li>
+                        <li>✅ 情绪跟踪功能，记录情绪变化</li>
+                        <li>✅ 统计分析功能，提供详细的数据统计</li>
+                        <li>✅ 温柔提醒功能，支持自定义提醒时间</li>
+                        <li>✅ 玻璃态设计，现代简约的用户界面</li>
+                        <li>✅ 响应式布局，适配不同尺寸的窗口</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 设计理念 -->
+    <section id="design" class="design">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">设计理念</h2>
+                <p class="section-subtitle">温柔与科技的完美融合</p>
+            </div>
+            <div class="design-content">
+                <div class="design-text">
+                    <h3 class="design-title">玻璃态设计</h3>
+                    <p class="design-description">采用现代的玻璃态设计，结合渐变背景和光影效果，创造出轻盈、通透的视觉体验，让界面更加优雅和现代。</p>
+                    
+                    <h3 class="design-title">温柔配色</h3>
+                    <p class="design-description">使用紫色和金色的和谐搭配，营造出温馨、舒适的氛围，减轻视觉疲劳，让你在专注的同时感受到温柔的陪伴。</p>
+                    
+                    <h3 class="design-title">流畅动画</h3>
+                    <p class="design-description">精心设计的动画和过渡效果，让界面更加生动和富有层次感，提升用户体验的同时不会分散你的注意力。</p>
+                    
+                    <h3 class="design-title">响应式布局</h3>
+                    <p class="design-description">适配不同尺寸的窗口，确保在任何设备上都能获得最佳的使用体验，无论是工作还是休闲，都能轻松应对。</p>
+                </div>
+                <div class="design-image">
+                    <div class="design-showcase">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Gentle%20Companion%20app%20design%20showcase%20with%20glass%20morphism%20UI%2C%20purple%20gradient%20background%2C%20and%20smooth%20animations%2C%20showing%20multiple%20app%20screens%20in%20a%20grid&image_size=landscape_16_9" alt="Gentle Companion 设计展示">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术特点 -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">技术特点</h2>
+                <p class="section-subtitle">先进技术与人性化设计的结合</p>
+            </div>
+            <div class="technology-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="tech-title">Swift/SwiftUI</h3>
+                    <p class="tech-description">使用 Swift 和 SwiftUI 构建，充分利用 macOS 的现代特性，确保应用的性能和稳定性。</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="tech-title">WeatherKit</h3>
+                    <p class="tech-description">集成 WeatherKit，提供实时天气数据，为你提供与天气相关的个性化提醒。</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="tech-title">情绪智能</h3>
+                    <p class="tech-description">基于情绪分析的智能提醒系统，根据你的情绪状态提供个性化的鼓励和建议。</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="tech-title">本地存储</h3>
+                    <p class="tech-description">所有数据均存储在本地，保护你的隐私，同时确保数据的安全性和可靠性。</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3 class="tech-title">通知系统</h3>
+                    <p class="tech-description">智能的通知系统，根据你的设置和习惯，在适当的时间提供温柔的提醒。</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="tech-title">数据分析</h3>
+                    <p class="tech-description">详细的数据分析和统计功能，帮助你了解自己的专注习惯和进步情况。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">常见问题</h2>
+                <p class="section-subtitle">解答你可能有的疑问</p>
+            </div>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>什么是番茄工作法？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>番茄工作法是一种时间管理方法，由弗朗西斯科·西里洛于 1980 年代创立。它的基本原理是将工作时间划分为 25 分钟的工作段（称为"番茄"），然后休息 5 分钟，每完成 4 个番茄后休息较长时间（15-30 分钟）。这种方法可以帮助你保持专注，提高工作效率，同时避免疲劳。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Gentle Companion 如何保护我的隐私？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Gentle Companion 非常重视你的隐私。所有数据均存储在本地，不会上传到任何服务器。我们不会收集、存储或共享你的任何个人信息，包括你的专注记录、情绪状态和位置数据。你可以放心使用，无需担心隐私问题。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>如何自定义番茄钟时长？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>在应用设置中，你可以根据自己的习惯和需求，自定义工作时间、休息时间和长休息时间。我们建议工作时间为 25-30 分钟，休息时间为 5-10 分钟，长休息时间为 15-30 分钟，但你可以根据自己的情况进行调整。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>如何查看我的专注统计数据？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>在应用的"统计与成就"页面，你可以查看详细的专注统计数据，包括完成次数、专注时长、连续天数、完成率等。你还可以查看每周统计和最近会话，了解自己的专注习惯和进步情况。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>如何解锁成就？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>通过完成番茄钟和保持专注，你可以解锁各种成就。例如，完成第一个番茄钟可以解锁"第一步"成就，连续 3 天完成番茄钟可以解锁"坚持者"成就，完成 20 个番茄钟可以解锁"专注大师"成就，累计专注 500 分钟可以解锁"时间大师"成就。成就系统可以帮助你保持动力，让专注变得更加有趣。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Gentle Companion 支持哪些 macOS 版本？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Gentle Companion 支持 macOS 13.0（Ventura）及以上版本。我们建议使用最新版本的 macOS，以获得最佳的使用体验和所有功能。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>如何设置天气提醒？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>在应用设置中，你可以启用天气提醒功能。系统会自动获取你的位置信息，然后根据当前天气状况为你提供个性化的温柔提醒。你也可以手动设置位置，以获得更准确的天气信息。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>如何使用情绪跟踪功能？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>在应用的主界面，你可以点击情绪跟踪按钮，选择当前的情绪状态。系统会记录你的情绪变化，并在统计页面中展示情绪与专注之间的关系。这可以帮助你了解自己的状态变化，更好地管理自己的情绪和工作节奏。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>如何设置温柔提醒？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>在应用设置中，你可以设置每日或每周的提醒时间。系统会在指定时间为你发送温柔的提醒消息，包括专注提醒、休息提醒和自我照顾提醒。你可以根据自己的需求自定义提醒内容和频率。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>如何导出我的专注数据？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>在应用的统计页面，你可以点击导出按钮，将你的专注数据导出为 CSV 格式。这可以帮助你在其他应用中分析自己的专注习惯，或者备份你的数据。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 使用指南 -->
+    <section id="guide" class="guide">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">使用指南</h2>
+                <p class="section-subtitle">如何充分利用Gentle Companion</p>
+            </div>
+            <div class="guide-content">
+                <div class="guide-section">
+                    <h3 class="guide-section-title">第一次使用</h3>
+                    <p class="guide-section-description">当你第一次打开Gentle Companion时，系统会引导你完成初始设置，包括选择情绪状态、设置番茄钟时长、启用提醒功能等。完成这些设置后，你就可以开始使用应用了。</p>
+                </div>
+                <div class="guide-section">
+                    <h3 class="guide-section-title">开始番茄钟</h3>
+                    <p class="guide-section-description">在应用的主界面，点击"开始"按钮，设置本次专注的目标，然后点击"开始番茄钟"。系统会开始计时，在工作时间结束后提醒你休息。你可以在番茄钟运行过程中暂停或取消计时。</p>
+                </div>
+                <div class="guide-section">
+                    <h3 class="guide-section-title">查看统计数据</h3>
+                    <p class="guide-section-description">在应用的主界面，点击"统计与成就"按钮，进入统计页面。在这里，你可以查看详细的专注统计数据，包括完成次数、专注时长、连续天数、完成率等。你还可以查看每周统计和最近会话，了解自己的专注习惯和进步情况。</p>
+                </div>
+                <div class="guide-section">
+                    <h3 class="guide-section-title">解锁成就</h3>
+                    <p class="guide-section-description">通过完成番茄钟和保持专注，你可以解锁各种成就。在统计页面的"成就"标签页中，你可以查看所有成就的解锁情况，了解自己的进步和目标。</p>
+                </div>
+                <div class="guide-section">
+                    <h3 class="guide-section-title">设置自定义提醒</h3>
+                    <p class="guide-section-description">在应用的设置页面，你可以设置每日或每周的提醒时间。系统会在指定时间为你发送温柔的提醒消息，帮助你保持专注，同时不忘照顾好自己。</p>
+                </div>
+                <div class="guide-section">
+                    <h3 class="guide-section-title">使用天气提醒</h3>
+                    <p class="guide-section-description">在应用的设置页面，启用天气提醒功能。系统会自动获取你的位置信息，然后根据当前天气状况为你提供个性化的温柔提醒。你也可以手动设置位置，以获得更准确的天气信息。</p>
+                </div>
+                <div class="guide-section">
+                    <h3 class="guide-section-title">跟踪情绪变化</h3>
+                    <p class="guide-section-description">在应用的主界面，点击情绪跟踪按钮，选择当前的情绪状态。系统会记录你的情绪变化，并在统计页面中展示情绪与专注之间的关系。这可以帮助你了解自己的状态变化，更好地管理自己的情绪和工作节奏。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">关于我们</h2>
+                <p class="section-subtitle">了解Gentle Companion的开发团队和理念</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-title">我们的理念</h3>
+                    <p class="about-description">Gentle Companion 诞生于一个简单的理念：科技应该温柔地陪伴我们，而不是控制我们。在这个快节奏的世界里，我们常常感到压力和焦虑，难以保持专注和平衡。Gentle Companion 旨在通过温柔的设计和智能的功能，帮助你找到专注与休息的平衡，让科技成为你生活中的温柔伙伴。</p>
+                    <p class="about-description">我们相信，专注不仅仅是一种工作方式，更是一种生活态度。通过番茄工作法和其他智能功能，Gentle Companion 帮助你培养专注的习惯，同时关注你的情绪和健康，让你在忙碌的生活中也能保持平衡和幸福感。</p>
+                </div>
+                <div class="about-team">
+                    <h3 class="about-title">我们的团队</h3>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <div class="team-avatar">
+                                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20man%20avatar%2C%20friendly%20smile%2C%20minimalist%20style&image_size=square" alt="团队成员头像">
+                            </div>
+                            <div class="team-info">
+                                <h4 class="team-name">张天城</h4>
+                                <p class="team-role">创始人 & 首席开发者</p>
+                                <p class="team-bio">专注于macOS应用开发，热爱创造简洁、优雅的用户体验。</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">
+                                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20woman%20avatar%2C%20friendly%20smile%2C%20minimalist%20style&image_size=square" alt="团队成员头像">
+                            </div>
+                            <div class="team-info">
+                                <h4 class="team-name">李雨晴</h4>
+                                <p class="team-role">UI/UX 设计师</p>
+                                <p class="team-bio">专注于创造温柔、优雅的用户界面，注重细节和用户体验。</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">
+                                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20man%20avatar%2C%20friendly%20smile%2C%20minimalist%20style&image_size=square" alt="团队成员头像">
+                            </div>
+                            <div class="team-info">
+                                <h4 class="team-name">王浩然</h4>
+                                <p class="team-role">数据分析师</p>
+                                <p class="team-bio">专注于用户行为分析和数据可视化，帮助优化产品功能。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 隐私政策 -->
+    <section id="privacy" class="privacy">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">隐私政策</h2>
+                <p class="section-subtitle">我们如何保护你的隐私</p>
+            </div>
+            <div class="privacy-content">
+                <div class="privacy-section">
+                    <h3 class="privacy-section-title">数据收集</h3>
+                    <p class="privacy-section-description">Gentle Companion 不会收集、存储或共享你的任何个人信息。所有数据均存储在你的本地设备上，包括：</p>
+                    <ul class="privacy-list">
+                        <li>专注会话记录</li>
+                        <li>情绪状态记录</li>
+                        <li>成就解锁记录</li>
+                        <li>应用设置</li>
+                    </ul>
+                    <p class="privacy-section-description">我们不会将这些数据上传到任何服务器，也不会与任何第三方共享。</p>
+                </div>
+                <div class="privacy-section">
+                    <h3 class="privacy-section-title">位置信息</h3>
+                    <p class="privacy-section-description">如果您启用了天气提醒功能，Gentle Companion 会请求获取您的位置信息，以便提供准确的天气数据。这些位置信息仅用于获取天气数据，不会被存储或共享。您也可以手动设置位置，以避免位置权限请求。</p>
+                </div>
+                <div class="privacy-section">
+                    <h3 class="privacy-section-title">数据安全</h3>
+                    <p class="privacy-section-description">我们采取了多种措施来保护你的数据安全：</p>
+                    <ul class="privacy-list">
+                        <li>所有数据均存储在本地设备上</li>
+                        <li>使用 macOS 的安全存储机制</li>
+                        <li>定期备份数据的选项</li>
+                        <li>数据导出功能，方便你备份和迁移数据</li>
+                    </ul>
+                </div>
+                <div class="privacy-section">
+                    <h3 class="privacy-section-title">第三方服务</h3>
+                    <p class="privacy-section-description">Gentle Companion 仅使用以下第三方服务：</p>
+                    <ul class="privacy-list">
+                        <li>WeatherKit：用于获取天气数据，仅在您启用天气提醒功能时使用</li>
+                    </ul>
+                    <p class="privacy-section-description">这些服务的使用遵循其各自的隐私政策，但 Gentle Companion 不会将您的个人数据共享给这些服务。</p>
+                </div>
+                <div class="privacy-section">
+                    <h3 class="privacy-section-title">隐私政策更新</h3>
+                    <p class="privacy-section-description">我们可能会不时更新本隐私政策。当我们更新隐私政策时，我们会在应用中通知您，并在网站上发布更新后的版本。我们鼓励您定期查看本隐私政策，以了解我们如何保护您的隐私。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务条款 -->
+    <section id="terms" class="terms">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">服务条款</h2>
+                <p class="section-subtitle">使用Gentle Companion的条款和条件</p>
+            </div>
+            <div class="terms-content">
+                <div class="terms-section">
+                    <h3 class="terms-section-title">接受条款</h3>
+                    <p class="terms-section-description">通过下载、安装或使用Gentle Companion，您同意遵守本服务条款。如果您不同意本条款，请不要下载、安装或使用本应用。</p>
+                </div>
+                <div class="terms-section">
+                    <h3 class="terms-section-title">许可证</h3>
+                    <p class="terms-section-description">Gentle Companion 授予您个人、非商业、不可转让的许可证，允许您在您的设备上安装和使用本应用。您不得：</p>
+                    <ul class="terms-list">
+                        <li>复制、修改、分发或出售本应用的任何部分</li>
+                        <li>反向工程、反编译或拆卸本应用</li>
+                        <li>使用本应用从事任何非法或违反本条款的活动</li>
+                    </ul>
+                </div>
+                <div class="terms-section">
+                    <h3 class="terms-section-title">知识产权</h3>
+                    <p class="terms-section-description">Gentle Companion 及其所有内容，包括但不限于软件、代码、图形、图标、图像、音频、视频、文本和用户界面，均受版权、商标和其他知识产权法律的保护。这些内容的所有权归我们或我们的许可方所有。</p>
+                </div>
+                <div class="terms-section">
+                    <h3 class="terms-section-title">免责声明</h3>
+                    <p class="terms-section-description">Gentle Companion 按"原样"提供，不附带任何明示或暗示的保证，包括但不限于适销性、特定用途适用性和非侵权性的保证。我们不对本应用的使用或无法使用承担任何责任，包括但不限于直接、间接、偶然、特殊或后果性损害。</p>
+                </div>
+                <div class="terms-section">
+                    <h3 class="terms-section-title">修改条款</h3>
+                    <p class="terms-section-description">我们保留随时修改本服务条款的权利。修改后的条款将在应用中通知您，并在网站上发布。您继续使用本应用即表示您接受修改后的条款。</p>
+                </div>
+                <div class="terms-section">
+                    <h3 class="terms-section-title">终止</h3>
+                    <p class="terms-section-description">我们保留在任何时候终止或暂停您对本应用的访问的权利，无论是否有理由。您可以随时通过卸载本应用来终止您的使用。</p>
+                </div>
+                <div class="terms-section">
+                    <h3 class="terms-section-title">适用法律</h3>
+                    <p class="terms-section-description">本服务条款受中华人民共和国法律管辖，不考虑其法律冲突规定。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">联系我们</h2>
+                <p class="section-subtitle">如有任何问题或建议，欢迎联系我们</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" placeholder="请输入你的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" name="email" placeholder="请输入你的邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言</label>
+                            <textarea id="message" name="message" rows="5" placeholder="请输入你的留言"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">发送留言</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>邮箱</h4>
+                            <p>support@gentlecompanion.app</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>GitHub</h4>
+                            <p>github.com/gentlecompanion</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-twitter"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Twitter</h4>
+                            <p>@GentleCompanion</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-discord"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Discord</h4>
+                            <p>discord.gg/gentlecompanion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <span class="logo-text">Gentle Companion</span>
+                    <p class="footer-tagline">温柔陪伴你的专注时光</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>产品</h4>
+                        <ul>
+                            <li><a href="#features">功能</a></li>
+                            <li><a href="#design">设计</a></li>
+                            <li><a href="#technology">技术</a></li>
+                            <li><a href="#download">下载</a></li>
+                            <li><a href="#changelog">更新日志</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>支持</h4>
+                        <ul>
+                            <li><a href="#faq">常见问题</a></li>
+                            <li><a href="#guide">使用指南</a></li>
+                            <li><a href="#contact">联系我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>关于</h4>
+                        <ul>
+                            <li><a href="#about">团队</a></li>
+                            <li><a href="#privacy">隐私政策</a></li>
+                            <li><a href="#terms">服务条款</a></li>
+                            <li><a href="#">版权信息</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Gentle Companion. 保留所有权利。</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
