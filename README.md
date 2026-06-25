@@ -22,8 +22,10 @@
 | 情绪陪伴 | 番茄钟 | 呼吸练习 |
 |:---:|:---:|:---:|
 | ![emotion](screenshots/emotion.png) | ![pomodoro](screenshots/pomodoro.png) | ![breathing](screenshots/breathing.png) |
-| **泡泡解压** | **花园物语** | **温柔墙** |
-| ![bubble](screenshots/bubble.png) | ![garden](screenshots/garden.png) | ![wall](screenshots/wall.png) |
+| **泡泡解压** | **花园物语** | **节奏游戏** |
+| ![bubble](screenshots/bubble.png) | ![garden](screenshots/garden.png) | ![rhythm](screenshots/rhythm.png) |
+| **温柔墙** | **社交动态** | |
+| ![wall](screenshots/wall.png) | ![social](screenshots/social.png) | |
 
 ---
 
