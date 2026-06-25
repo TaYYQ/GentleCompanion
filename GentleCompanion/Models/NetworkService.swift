@@ -11,7 +11,7 @@ class NetworkService: @unchecked Sendable {
     static let shared = NetworkService()
     
     private let session: URLSession
-    private let baseURL: String
+    private var baseURL: String
     
     // JWT token 存储
     private let tokenKey = "gentle_auth_token_v1"
@@ -22,10 +22,15 @@ class NetworkService: @unchecked Sendable {
         configuration.timeoutIntervalForRequest = 30
         configuration.timeoutIntervalForResource = 60
         session = URLSession(configuration: configuration)
-        // 修改为你自己的服务器地址
-        baseURL = "http://YOUR_SERVER_IP:80"
+        // 从用户配置读取服务器地址，默认 127.0.0.1:80
+        baseURL = ServerConfigManager.shared.baseURL
         // 从 Keychain/UserDefaults 恢复 token
         authToken = UserDefaults.standard.string(forKey: tokenKey)
+    }
+    
+    /// 重新加载服务器地址（用户在设置中修改后调用）
+    func reloadBaseURL() {
+        baseURL = ServerConfigManager.shared.baseURL
     }
     
     /// 保存 token（登录/注册成功后调用）

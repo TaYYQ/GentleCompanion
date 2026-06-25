@@ -46,7 +46,13 @@
 		093206309C5082E78C6EE0A3 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E5D29E8C05D0054451D /* Design.swift */; };
 		353DF1D92A96F9E87ED1C36B /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
 		3FA760B51A196FE82AA5026B /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
+		70CB7C3E194910DDAB5C3FEC /* Models/NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6929E8C05D0054451D /* Models/NetworkService.swift */; };
 		92CBFD41272EED5DB0E01D74 /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
+		95F104316AC5E0808669FF00 /* ServerConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4635DA2EA0B52D811F45937F /* ServerConfigManager.swift */; };
+		AB31ADDA027999DCC9D74202 /* Views/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */; };
+		C55158C32CA8F107B8A7152A /* Models/NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6929E8C05D0054451D /* Models/NetworkService.swift */; };
+		C92549C518BE264215691B06 /* Views/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */; };
+		E10D5EA63349CF4F93F66462 /* Views/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */; };
 		EE9E0BC8324591220A06A273 /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
 		F9F422A2CDC5294CDBF3D502 /* Views/SocialFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9129E8C05D0054451D /* Views/SocialFeedView.swift */; };
 		RES00001000000000000001 /* Resources/壁炉.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = RES00002000000000000001 /* Resources/壁炉.mp3 */; };
@@ -94,7 +100,9 @@
 		00C30E9B29E8C05D0054451D /* Views/ActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ActivationView.swift; sourceTree = "<group>"; };
 		00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/GentleMainView.swift; sourceTree = "<group>"; };
 		00C30E9F29E8C05D0054451D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4635DA2EA0B52D811F45937F /* ServerConfigManager.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = ServerConfigManager.swift; path = Models/ServerConfigManager.swift; sourceTree = SOURCE_ROOT; };
 		9490F648B2BBE63FF58BAC0F /* GentleCompanion.entitlements */ = {isa = PBXFileReference; explicitFileType = text.plist.entitlements; lastKnownFileType = text.plist.entitlements; name = GentleCompanion.entitlements; path = GentleCompanion.entitlements; sourceTree = SOURCE_ROOT; };
+		DBB28FF2D39D7941F292926F /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; lastKnownFileType = text.plist; name = Info.plist; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		DC811C48A7FA24EF6463D498 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 		RES00002000000000000001 /* Resources/壁炉.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Resources/壁炉.mp3"; sourceTree = "<group>"; };
 		RES00003000000000000002 /* Resources/风声.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Resources/风声.mp3"; sourceTree = "<group>"; };
@@ -125,6 +133,10 @@
 				00C30E5D29E8C05D0054451D /* Design.swift */,
 				00C30E6D29E8C05D0054451D /* Models/SocialService.swift */,
 				00C30E9129E8C05D0054451D /* Views/SocialFeedView.swift */,
+				00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */,
+				DBB28FF2D39D7941F292926F /* Info.plist */,
+				00C30E6929E8C05D0054451D /* Models/NetworkService.swift */,
+				4635DA2EA0B52D811F45937F /* ServerConfigManager.swift */,
 			);
 			path = "/Users/ztc/Desktop/APP 2/GentleCompanion";
 			sourceTree = "<absolute>";
@@ -324,6 +336,12 @@
 				F9F422A2CDC5294CDBF3D502 /* Views/SocialFeedView.swift in Sources */,
 				353DF1D92A96F9E87ED1C36B /* Models/SocialService.swift in Sources */,
 				92CBFD41272EED5DB0E01D74 /* Models/SocialService.swift in Sources */,
+				C92549C518BE264215691B06 /* Views/SettingsView.swift in Sources */,
+				C55158C32CA8F107B8A7152A /* Models/NetworkService.swift in Sources */,
+				AB31ADDA027999DCC9D74202 /* Views/SettingsView.swift in Sources */,
+				70CB7C3E194910DDAB5C3FEC /* Models/NetworkService.swift in Sources */,
+				E10D5EA63349CF4F93F66462 /* Views/SettingsView.swift in Sources */,
+				95F104316AC5E0808669FF00 /* ServerConfigManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

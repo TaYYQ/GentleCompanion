@@ -297,6 +297,45 @@ struct SettingsView: View {
                     VStack(spacing: GentleSpacing.md) {
                         SectionHeader(title: "服务器连接", icon: "wifi")
                         
+                        // 服务器地址输入
+                        VStack(spacing: GentleSpacing.sm) {
+                            HStack {
+                                Text("服务器地址")
+                                    .font(GentleFont.body())
+                                    .foregroundColor(Gentle.Text.primary)
+                                Spacer()
+                            }
+                            
+                            HStack(spacing: GentleSpacing.xs) {
+                                TextField("IP 地址或域名", text: Binding(
+                                    get: { ServerConfigManager.shared.serverHost },
+                                    set: { newValue in
+                                        ServerConfigManager.shared.serverHost = newValue
+                                        NetworkService.shared.reloadBaseURL()
+                                    }
+                                ))
+                                .textFieldStyle(.roundedBorder)
+                                .frame(width: 150)
+                                
+                                Text(":")
+                                    .foregroundColor(Gentle.Text.secondary)
+                                
+                                TextField("端口", text: Binding(
+                                    get: { String(ServerConfigManager.shared.serverPort) },
+                                    set: { newValue in
+                                        if let port = Int(newValue), port > 0, port <= 65535 {
+                                            ServerConfigManager.shared.serverPort = port
+                                            NetworkService.shared.reloadBaseURL()
+                                        }
+                                    }
+                                ))
+                                .textFieldStyle(.roundedBorder)
+                                .frame(width: 60)
+                                
+                                Spacer()
+                            }
+                        }
+                        
                         // 连接状态指示器
                         HStack(spacing: GentleSpacing.sm) {
                             // 脉冲指示灯
@@ -356,7 +395,7 @@ struct SettingsView: View {
                         // 诊断详情
                         VStack(spacing: 0) {
                             // 服务器地址
-                            DetailRow(label: "服务器地址", value: "YOUR_SERVER_IP:80")
+                            DetailRow(label: "服务器地址", value: "\(ServerConfigManager.shared.serverHost):\(ServerConfigManager.shared.serverPort)")
                             
                             Divider()
                                 .padding(.leading, 100)
@@ -644,7 +683,8 @@ struct SettingsView: View {
             
             do {
                 // 1. 先请求根路径获取基本信息
-                guard let url = URL(string: "http://YOUR_SERVER_IP:80/") else {
+                let serverURL = ServerConfigManager.shared.baseURL + "/"
+                guard let url = URL(string: serverURL) else {
                     isServerConnected = false
                     serverCheckError = "无效的服务器地址"
                     return
@@ -717,12 +757,13 @@ struct SettingsView: View {
             serverResponseTime = nil
             serverVersion = nil
             
-            let host = "YOUR_SERVER_IP"
-            let port = 80
+            let host = ServerConfigManager.shared.serverHost
+            let port = ServerConfigManager.shared.serverPort
+            let scheme = ServerConfigManager.shared.useHTTPS ? "https" : "http"
             let startTotal = CFAbsoluteTimeGetCurrent()
             
             do {
-                guard let url = URL(string: "http://\(host):\(port)/") else {
+                guard let url = URL(string: "\(scheme)://\(host):\(port)/") else {
                     serverCheckError = "无效地址"
                     isServerConnected = false
                     return
@@ -788,7 +829,8 @@ struct SettingsView: View {
         
         Task {
             do {
-                guard let url = URL(string: "http://YOUR_SERVER_IP:80/") else {
+                let serverURL = ServerConfigManager.shared.baseURL + "/"
+                guard let url = URL(string: serverURL) else {
                     await MainActor.run {
                         isCheckingUpdate = false
                         updateMessage = "更新检查失败"
