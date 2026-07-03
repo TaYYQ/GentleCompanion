@@ -18,10 +18,14 @@ struct GentleMainView: View {
     @State private var showGentleWall = false
     @State private var showSocialFeed = false
     @State private var showEntertainment = false
+    @State private var showWeather = false
     @State private var currentQuote = 0
     @State private var selectedMood: EmotionType? = .tired
     @State private var cardHovered: String? = nil
     @State private var appearAnimation = false
+    @State private var weatherSnapshot: GentleWeatherSnapshot?
+    @State private var isLoadingWeather = false
+    @State private var backgroundWeatherSnapshot: GentleWeatherSnapshot?
     
     let quotes = [
         "躺平不是放弃，是和自己的身体和解。",
@@ -34,29 +38,32 @@ struct GentleMainView: View {
     
     var body: some View {
         ZStack {
-            // 多层装饰背景
+            // 天气动态背景
             ZStack {
-                LinearGradient(
-                    colors: [
-                        Color(hex: "#FAF8FF"),
-                        Color(hex: "#F3ECFF"),
-                        Color(hex: "#F8F4FF")
-                    ],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
+                weatherAwareBackground
+                    .ignoresSafeArea()
                 
+                // 天气动态特效
+                if let snapshot = backgroundWeatherSnapshot {
+                    weatherEffect(for: snapshot.condition)
+                        .ignoresSafeArea()
+                        .allowsHitTesting(false)
+                }
+                
+                // 柔光装饰
                 Circle()
-                    .fill(Gentle.Primary.lavender.opacity(0.05))
+                    .fill(Gentle.Primary.lavender.opacity(0.04))
                     .frame(width: 300, height: 300)
                     .blur(radius: 60)
                     .offset(x: -200, y: -150)
+                    .allowsHitTesting(false)
                 
                 Circle()
-                    .fill(Gentle.Primary.pink.opacity(0.04))
+                    .fill(Gentle.Primary.pink.opacity(0.03))
                     .frame(width: 250, height: 250)
                     .blur(radius: 50)
                     .offset(x: 250, y: 200)
+                    .allowsHitTesting(false)
             }
             .ignoresSafeArea()
             
@@ -82,11 +89,36 @@ struct GentleMainView: View {
                 .opacity(appearAnimation ? 1 : 0)
                 .offset(y: appearAnimation ? 0 : 20)
             }
+            
+            // 天气面板（主页面内悬浮展示）
+            if showWeather {
+                Color.black.opacity(0.2)
+                    .ignoresSafeArea()
+                    .onTapGesture { closeWeather() }
+                    .transition(.opacity)
+                
+                WeatherView(weatherSnapshot: weatherSnapshot, isLoading: isLoadingWeather, isPresented: $showWeather)
+                    .frame(width: 1091, height: 738)
+                    .background(.ultraThinMaterial)
+                    .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
+                    .shadow(color: .black.opacity(0.15), radius: 30, x: 0, y: 10)
+                    .transition(.scale(scale: 0.9).combined(with: .opacity))
+                    .zIndex(1)
+            }
+        }
+        .animation(.easeInOut(duration: 0.3), value: showWeather)
+        .onExitCommand {
+            if showWeather { closeWeather() }
         }
         .onAppear {
             withAnimation(.easeOut(duration: 0.6)) {
                 appearAnimation = true
             }
+            loadBackgroundWeather()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("RefreshWeather"))) { _ in
+            loadWeather()
+            loadBackgroundWeather()
         }
         .sheet(isPresented: $showSettings) {
             SettingsView(isPresented: $showSettings)
@@ -378,6 +410,101 @@ struct GentleMainView: View {
         }
     }
     
+    // MARK: - Weather
+    
+    private func loadWeather() {
+        isLoadingWeather = true
+        showWeather = true
+        let settings = SettingsManager.shared.settings
+        let emotion = selectedMood.map { mapToEmotion($0) } ?? .exhausted
+        Task {
+            let snapshot = await GentleWeatherProvider.shared.fetch(for: settings, emotion: emotion)
+            await MainActor.run {
+                weatherSnapshot = snapshot
+                backgroundWeatherSnapshot = snapshot
+                isLoadingWeather = false
+            }
+        }
+    }
+    
+    private func closeWeather() {
+        withAnimation(.easeInOut(duration: 0.25)) {
+            showWeather = false
+        }
+    }
+    
+    private func loadBackgroundWeather() {
+        let settings = SettingsManager.shared.settings
+        let emotion = selectedMood.map { mapToEmotion($0) } ?? .exhausted
+        Task {
+            let snapshot = await GentleWeatherProvider.shared.fetch(for: settings, emotion: emotion)
+            await MainActor.run {
+                withAnimation(.easeInOut(duration: 1.2)) {
+                    backgroundWeatherSnapshot = snapshot
+                }
+            }
+        }
+    }
+    
+    private func mapToEmotion(_ type: EmotionType) -> Emotion {
+        switch type {
+        case .neutral: return .empty
+        case .tired: return .exhausted
+        case .happy: return .incompleteJoy
+        case .calm: return .empty
+        case .energetic: return .incompleteJoy
+        case .grateful: return .incompleteJoy
+        case .other: return .other
+        }
+    }
+    
+    // MARK: - Weather Background & Effects
+    
+    @ViewBuilder
+    private var weatherAwareBackground: some View {
+        if let snapshot = backgroundWeatherSnapshot {
+            switch snapshot.condition {
+            case .clear:
+                LinearGradient(colors: [Color(hex: "#FFFBEB"), Color(hex: "#FEF3C7"), Color(hex: "#FDE68A")], startPoint: .top, endPoint: .bottom)
+            case .cloudy:
+                LinearGradient(colors: [Color(hex: "#F8FAFC"), Color(hex: "#E2E8F0"), Color(hex: "#CBD5E1")], startPoint: .topLeading, endPoint: .bottomTrailing)
+            case .rainy:
+                LinearGradient(colors: [Color(hex: "#EFF6FF"), Color(hex: "#BFDBFE"), Color(hex: "#93C5FD")], startPoint: .top, endPoint: .bottom)
+            case .foggy:
+                LinearGradient(colors: [Color(hex: "#FAFAFA"), Color(hex: "#E4E4E7"), Color(hex: "#D4D4D8")], startPoint: .top, endPoint: .bottom)
+            case .snowy:
+                LinearGradient(colors: [Color(hex: "#F0F9FF"), Color(hex: "#BAE6FD"), Color(hex: "#7DD3FC")], startPoint: .top, endPoint: .bottom)
+            case .extreme:
+                LinearGradient(colors: [Color(hex: "#1E1B4B"), Color(hex: "#312E81"), Color(hex: "#4338CA")], startPoint: .topLeading, endPoint: .bottomTrailing)
+            case .unknown:
+                defaultBackground
+            }
+        } else {
+            defaultBackground
+        }
+    }
+    
+    private var defaultBackground: some View {
+        LinearGradient(
+            colors: [Color(hex: "#FAF8FF"), Color(hex: "#F3ECFF"), Color(hex: "#F8F4FF")],
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing
+        )
+    }
+    
+    @ViewBuilder
+    private func weatherEffect(for condition: GentleWeatherCondition) -> some View {
+        switch condition {
+        case .clear:      SunEffectView()
+        case .cloudy:     CloudEffectView()
+        case .rainy:      RainEffectView()
+        case .foggy:      FogEffectView()
+        case .snowy:      SnowEffectView()
+        case .extreme:    StormEffectView()
+        case .unknown:    EmptyView()
+        }
+    }
+    
     // MARK: - Feature Grid
     
     private var featureGrid: some View {
@@ -462,6 +589,17 @@ struct GentleMainView: View {
                     showSettings = true
                 }
                 .onHover { h in cardHovered = h ? "settings" : nil }
+                
+                FeatureGridCard(
+                    icon: "cloud.sun.fill",
+                    iconColor: Gentle.Primary.indigo,
+                    title: "天气",
+                    subtitle: "天气心情 · 温柔陪伴",
+                    isHovered: cardHovered == "weather"
+                ) {
+                    loadWeather()
+                }
+                .onHover { h in cardHovered = h ? "weather" : nil }
             }
         }
     }

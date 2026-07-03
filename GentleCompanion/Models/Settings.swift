@@ -8,8 +8,6 @@
 import Foundation
 import AppKit
 import UserNotifications
-import CoreLocation
-import WeatherKit
 import SwiftUI
 
 enum GentleWeatherCondition: String, Codable {
@@ -28,138 +26,13 @@ struct GentleWeatherSnapshot: Codable {
     let symbolName: String
     let line: String
     let detail: String
+    let temperature: Double?
+    let windSpeed: Double?
+    let humidity: Int?
     let createdAt: Date
 }
 
-@available(macOS 13.0, *)
-class GentleWeatherProvider: @unchecked Sendable {
-    static let shared = GentleWeatherProvider()
-    private let service = WeatherService.shared
-    
-    private init() {}
-    
-    func fetch(for settings: AppSettings, emotion: Emotion) async -> GentleWeatherSnapshot? {
-        let fallbackLocation = Location(
-            latitude: 34.0522,
-            longitude: -118.2437,
-            city: "洛杉矶",
-            timezone: "America/Los_Angeles"
-        )
-        let storedLocation = settings.currentLocation ?? fallbackLocation
-        let clLocation = CLLocation(latitude: storedLocation.latitude, longitude: storedLocation.longitude)
-        do {
-            let weather = try await service.weather(for: clLocation)
-            let condition = GentleWeatherCondition(from: weather.currentWeather.condition)
-            let city = storedLocation.city ?? "你的城市"
-            let symbolName = GentleWeatherProvider.symbolName(for: condition)
-            let (line, detail) = GentleWeatherProvider.gentleLines(
-                for: condition,
-                emotion: emotion,
-                city: city
-            )
-            return GentleWeatherSnapshot(
-                city: city,
-                condition: condition,
-                symbolName: symbolName,
-                line: line,
-                detail: detail,
-                createdAt: Date()
-            )
-        } catch {
-            return nil
-        }
-    }
-    
-    private static func symbolName(for condition: GentleWeatherCondition) -> String {
-        switch condition {
-        case .clear: return "sun.max"
-        case .cloudy: return "cloud"
-        case .rainy: return "cloud.rain"
-        case .foggy: return "cloud.fog"
-        case .snowy: return "cloud.snow"
-        case .extreme: return "exclamationmark.triangle"
-        case .unknown: return "sparkles"
-        }
-    }
-    
-    private static func gentleLines(for condition: GentleWeatherCondition, emotion: Emotion, city: String) -> (String, String) {
-        let cityPart = city.isEmpty ? "今天" : city
-        switch condition {
-        case .clear:
-            let line = "\(cityPart)晴，太阳在轻轻说：今天也值得被爱。"
-            let detail: String
-            switch emotion {
-            case .empty:
-                detail = "阳光洒在窗台上，也照得到这块暂时空掉的心。它不催你，只陪你。"
-            case .exhausted:
-                detail = "加州的阳光很明亮，但你可以慢一点，让光先替你努力。"
-            case .anxious:
-                detail = "天这么亮，说明世界还在等你慢慢来，不用一下子赶上所有光。"
-            default:
-                detail = "阳光洒满窗台，像在提醒你：你的温柔也值得被看见。"
-            }
-            return (line, detail)
-        case .rainy:
-            let line = "\(cityPart)有雨，云在替你多想一点。"
-            let detail: String
-            switch emotion {
-            case .exhausted:
-                detail = "雨声像一条被子，把今天的疲惫都盖住了，你只负责躺一会儿就好。"
-            case .empty, .lonely:
-                detail = "雨在替你哭一场，没关系，哭完继续温柔地活着。"
-            default:
-                detail = "窗外的雨在认真地下着，像在提醒你：你的情绪也可以被认真对待。"
-            }
-            return (line, detail)
-        case .foggy, .cloudy:
-            let line = "\(cityPart)多云/有雾，世界被轻轻蒙上了一层纱。"
-            let detail: String
-            switch emotion {
-            case .anxious:
-                detail = "雾里看不清没关系，现在看不清路，也不代表你没有方向。"
-            case .empty:
-                detail = "天灰灰的日子，本来就适合慢一点，对自己温柔一点。"
-            default:
-                detail = "云层偶尔会厚一点，但太阳没有消失，就像你的力量一样。"
-            }
-            return (line, detail)
-        case .snowy:
-            let line = "\(cityPart)下雪了，世界在帮你按下慢放键。"
-            let detail = "每一片落下来的雪花，都在说：可以走得更慢一点，也没关系。"
-            return (line, detail)
-        case .extreme:
-            let line = "\(cityPart)今天有点极端天气，请先照顾好自己。"
-            let detail = "今天热得像抱抱太多、风大得像心事太满。不管外面怎样，你都值得被好好保护，多喝水、多休息。"
-            return (line, detail)
-        case .unknown:
-            let line = "看不太清今天的天气，但可以先照顾好当下的你。"
-            let detail = "就算天气预报说不清，现在这个你也依然值得被温柔对待。"
-            return (line, detail)
-        }
-    }
-}
 
-@available(macOS 13.0, *)
-extension GentleWeatherCondition {
-    init(from condition: WeatherCondition) {
-        let raw = String(describing: condition).lowercased()
-        if raw.contains("clear") || raw.contains("sun") {
-            self = .clear
-        } else if raw.contains("cloud") {
-            self = .cloudy
-        } else if raw.contains("rain") || raw.contains("drizzle") {
-            self = .rainy
-        } else if raw.contains("snow") {
-            self = .snowy
-        } else if raw.contains("fog") || raw.contains("haze") {
-            self = .foggy
-        } else if raw.contains("storm") || raw.contains("thunder") || raw.contains("extreme") {
-            self = .extreme
-        } else {
-            self = .unknown
-        }
-    }
-}
 
 enum ReminderFrequency: String, Codable, CaseIterable {
     case daily

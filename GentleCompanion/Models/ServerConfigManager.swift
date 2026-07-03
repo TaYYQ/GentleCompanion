@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ServerConfigManager {
+class ServerConfigManager: @unchecked Sendable {
     static let shared = ServerConfigManager()
     
     private let serverHostKey = "gentle_server_host"
@@ -15,7 +15,7 @@ class ServerConfigManager {
     private let serverUseHTTPSKey = "gentle_server_use_https"
     
     private let defaultHost = "127.0.0.1"
-    private let defaultPort = 80
+    private let defaultPort = 8000
     private let defaultUseHTTPS = false
     
     private init() {}
