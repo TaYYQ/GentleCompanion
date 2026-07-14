@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #070a12;
+  color: white;
+  font-family: ui-sans-serif, system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* GPU-accelerated animations */
+.animate-pulse,
+.animate-bounce,
+[class*="animate-"] {
+  will-change: transform, opacity;
+}
+
+/* Lazy render off-screen sections */
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: 500px;
+}
+
+/* Keep hero above fold eagerly rendered */
+section:first-of-type {
+  content-visibility: visible;
+  contain-intrinsic-size: auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate3d(0, 0, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}

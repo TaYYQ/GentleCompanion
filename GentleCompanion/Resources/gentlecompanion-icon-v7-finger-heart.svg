@@ -1,0 +1,57 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A3A3C"/>
+      <stop offset="100%" stop-color="#0B0B0C"/>
+    </linearGradient>
+
+    <radialGradient id="sheen" cx="50%" cy="0%" r="75%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 心形用一点暖色作为整个图标里唯一的色彩焦点 -->
+    <linearGradient id="heartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A7A"/>
+      <stop offset="100%" stop-color="#E8544A"/>
+    </linearGradient>
+
+    <filter id="liftShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="512" height="512" rx="0" fill="url(#bgGradient)"/>
+  <rect x="0" y="0" width="512" height="512" rx="0" fill="url(#sheen)"/>
+
+  <!-- 左侧食指：从画布外侧指向中心，底部宽、指尖窄，保留一点指甲弧线 -->
+  <g id="pointerFinger" filter="url(#liftShadow)">
+    <path d="M 96 228
+             C 96 223, 101 220, 108 220
+             L 170 230
+             C 186 233, 196 242, 196 256
+             C 196 270, 186 279, 170 282
+             L 108 292
+             C 101 292, 96 289, 96 284
+             Z"
+          fill="#FFFFFF"/>
+  </g>
+
+  <!-- 右侧食指：左侧的完全镜像，保证对称 -->
+  <use href="#pointerFinger" transform="translate(512,0) scale(-1,1)"/>
+
+  <!-- 中间的爱心：两根手指之间轻轻悬着的焦点 -->
+  <g filter="url(#liftShadow)">
+    <path d="
+      M256 300
+      C 230 272, 208 254, 208 228
+      C 208 212, 220 200, 236 200
+      C 246 200, 253 206, 256 216
+      C 259 206, 266 200, 276 200
+      C 292 200, 304 212, 304 228
+      C 304 254, 282 272, 256 300
+      Z"
+      fill="url(#heartGradient)"/>
+  </g>
+</svg>

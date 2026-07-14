@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
+#if canImport(AppKit)
 import AppKit
+#endif
 import AVFoundation
 import UserNotifications
 
@@ -40,7 +42,9 @@ struct SettingsView: View {
     @State private var soundVolume: Double = 0.3
     
     // 悬浮窗引用
+    #if canImport(AppKit)
     @State private var floatingWindow: NSWindow?
+    #endif
     
     // 版本检查
     @State private var isCheckingUpdate = false
@@ -206,7 +210,13 @@ struct SettingsView: View {
                         
                         SettingToggle(
                             title: "悬浮窗",
-                            subtitle: floatingWindow != nil ? "悬浮窗已开启" : "显示小窗口",
+                            subtitle: {
+                                #if canImport(AppKit)
+                                return floatingWindow != nil ? "悬浮窗已开启" : "显示小窗口"
+                                #else
+                                return "显示小窗口"
+                                #endif
+                            }(),
                             isOn: Binding(
                                 get: { appSettings.floatingWindowEnabled },
                                 set: {
@@ -602,6 +612,7 @@ struct SettingsView: View {
     
     // MARK: - Full Screen
     
+    #if canImport(AppKit)
     private func applyFullScreenMode(_ enabled: Bool) {
         guard let window = NSApplication.shared.windows.first else { return }
         
@@ -614,9 +625,13 @@ struct SettingsView: View {
             }
         }
     }
+    #else
+    private func applyFullScreenMode(_ enabled: Bool) {}
+    #endif
     
     // MARK: - Floating Window
-    
+
+    #if canImport(AppKit)
     private func showFloatingWindow() {
         let panel = NSPanel(
             contentRect: NSRect(x: 0, y: 0, width: 200, height: 120),
@@ -651,6 +666,10 @@ struct SettingsView: View {
         floatingWindow?.close()
         floatingWindow = nil
     }
+    #else
+    private func showFloatingWindow() {}
+    private func hideFloatingWindow() {}
+    #endif
     
     // MARK: - Notifications
     
@@ -880,14 +899,14 @@ struct SettingsView: View {
                     Text("界面主题")
                         .font(GentleFont.body())
                         .foregroundColor(Gentle.Text.primary)
-                    Text("选择 macOS 或 Windows 视觉风格")
+                    Text("选择你喜欢的色彩风格")
                         .font(GentleFont.caption())
                         .foregroundColor(Gentle.Text.secondary)
                 }
                 Spacer()
             }
             
-            HStack(spacing: GentleSpacing.sm) {
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: GentleSpacing.sm) {
                 ForEach(GentlePlatformTheme.allCases, id: \.self) { theme in
                     ThemeOptionButton(
                         theme: theme,
@@ -906,6 +925,7 @@ struct SettingsView: View {
     
     // MARK: - Clear Data
     
+    #if canImport(AppKit)
     private func clearAllData() {
         let alert = NSAlert()
         alert.messageText = "确认清除"
@@ -920,10 +940,18 @@ struct SettingsView: View {
             updateMessage = "数据已清除"
         }
     }
+    #else
+    private func clearAllData() {
+        SettingsManager.shared.settings = AppSettings.defaultSettings
+        appSettings = AppSettings.defaultSettings
+        updateMessage = "数据已清除"
+    }
+    #endif
 }
 
 // MARK: - Floating Window Content
 
+#if canImport(AppKit)
 struct FloatingWindowContent: View {
     @State private var currentEmotion: Emotion?
     @State private var isHovering = false
@@ -1104,8 +1132,10 @@ struct FloatingWindowContent: View {
         return msgs[messageIndex % msgs.count]
     }
 }
+#endif
 
 // Visual Effect Blur for macOS
+#if canImport(AppKit)
 struct VisualEffectBlur: NSViewRepresentable {
     var material: NSVisualEffectView.Material
     var blendingMode: NSVisualEffectView.BlendingMode
@@ -1123,6 +1153,7 @@ struct VisualEffectBlur: NSViewRepresentable {
         nsView.blendingMode = blendingMode
     }
 }
+#endif
 
 // MARK: - Emotion History View
 
@@ -1278,9 +1309,9 @@ struct EmotionAnalysisView: View {
         VStack(spacing: 16) {
             // 统计卡片
             HStack(spacing: 16) {
-                StatCard(icon: "doc.text", iconColor: Gentle.Primary.purple, value: "\(entries.count)", label: "总记录")
-                StatCard(icon: "calendar", iconColor: Gentle.Primary.purple, value: "\(recentCount)", label: "最近7天")
-                StatCard(icon: "flame", iconColor: .orange, value: "\(streakDays)", label: "连续天数")
+                statItem(icon: "doc.text", iconColor: Gentle.Primary.purple, value: "\(entries.count)", label: "总记录")
+                statItem(icon: "calendar", iconColor: Gentle.Primary.purple, value: "\(recentCount)", label: "最近7天")
+                statItem(icon: "flame", iconColor: .orange, value: "\(streakDays)", label: "连续天数")
             }
             
             // 最常见情绪
@@ -1314,7 +1345,7 @@ struct EmotionAnalysisView: View {
                         Spacer()
                     }
                     .padding()
-                    .background(Color(nsColor: .controlBackgroundColor))
+                    .background(platformControlBackground)
                     .cornerRadius(12)
                 }
             }
@@ -1337,7 +1368,7 @@ struct EmotionAnalysisView: View {
                 }
             }
             .padding()
-            .background(Color(nsColor: .controlBackgroundColor))
+            .background(platformControlBackground)
             .cornerRadius(12)
         }
     }
@@ -1354,11 +1385,35 @@ struct EmotionAnalysisView: View {
                 }
             }
             .padding()
-            .background(Color(nsColor: .controlBackgroundColor))
+            .background(platformControlBackground)
             .cornerRadius(12)
         }
     }
     
+    private func statItem(icon: String, iconColor: Color, value: String, label: String) -> some View {
+        VStack(spacing: 8) {
+            Image(systemName: icon)
+                .font(.system(size: 20))
+                .foregroundColor(iconColor)
+            Text(value)
+                .font(.system(size: 22, weight: .bold))
+                .foregroundColor(.white)
+            Text(label)
+                .font(.system(size: 11))
+                .foregroundColor(.white.opacity(0.4))
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 18)
+        .background(
+            RoundedRectangle(cornerRadius: GentleRadius.md)
+                .fill(Color.white.opacity(0.06))
+                .overlay(
+                    RoundedRectangle(cornerRadius: GentleRadius.md)
+                        .stroke(.white.opacity(0.1), lineWidth: 0.8)
+                )
+        )
+    }
+
     private func loadEntries() {
         entries = SettingsManager.shared.settings.emotionHistory
     }
@@ -1392,6 +1447,14 @@ struct EmotionAnalysisView: View {
         return streak
     }
     
+    private var platformControlBackground: Color {
+        #if canImport(AppKit)
+        Color(nsColor: .controlBackgroundColor)
+        #else
+        Color(UIColor.systemBackground)
+        #endif
+    }
+
     private var mostCommonEmotion: Emotion? {
         let counts = Dictionary(grouping: entries, by: { $0.emotion })
             .mapValues { $0.count }
@@ -1991,9 +2054,6 @@ struct ThemeOptionButton: View {
     }
     
     private func themeLabel(for theme: GentlePlatformTheme) -> String {
-        switch theme {
-        case .macOS: return "优雅 · 紫调"
-        case .windows: return "清爽 · 蓝调"
-        }
+        theme.tagline
     }
 }

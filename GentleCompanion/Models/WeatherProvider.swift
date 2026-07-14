@@ -222,12 +222,12 @@ class GentleWeatherProvider: @unchecked Sendable {
         let locationID: String
     }
     
-    /// 使用和风天气 GeoAPI 搜索城市
+    /// 使用和风天气 GeoAPI 搜索城市（支持全球城市）
     func searchCities(query: String) async -> [CityResult] {
         let trimmed = query.trimmingCharacters(in: .whitespaces)
         guard !trimmed.isEmpty,
               let encoded = trimmed.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
-              let url = URL(string: "\(apiHost)/geo/v2/city/lookup?location=\(encoded)&number=10&range=cn&lang=zh&key=\(apiKey)") else {
+              let url = URL(string: "\(apiHost)/geo/v2/city/lookup?location=\(encoded)&number=10&range=world&lang=zh&key=\(apiKey)") else {
             return []
         }
         

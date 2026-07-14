@@ -6,10 +6,22 @@
 //
 
 import SwiftUI
+#if canImport(AppKit)
 import AppKit
+#endif
+
+// MARK: - Cross-platform image type
+
+#if canImport(AppKit)
+typealias PlatformImage = NSImage
+#elseif canImport(UIKit)
+import UIKit
+typealias PlatformImage = UIImage
+#endif
 
 // MARK: - Image Helpers
 
+#if canImport(AppKit)
 func tiffData(_ image: NSImage) -> Data {
     guard let tiff = image.tiffRepresentation,
           let bitmap = NSBitmapImageRep(data: tiff),
@@ -18,6 +30,7 @@ func tiffData(_ image: NSImage) -> Data {
     }
     return jpeg
 }
+#endif
 
 // MARK: - Social Feed View
 
@@ -28,7 +41,7 @@ struct SocialFeedView: View {
     @State private var currentView: CurrentView = .main
     @State private var newPostContent = ""
     @State private var isPrivatePost = false
-    @State private var selectedImages: [NSImage] = []
+    @State private var selectedImages: [PlatformImage] = []
     @State private var hoveredPost: String?
     @State private var isLoading = false
     @State private var errorMessage: String?
@@ -467,6 +480,7 @@ struct SocialFeedView: View {
         }
     }
     
+    #if canImport(AppKit)
     private func selectImages() {
         let panel = NSOpenPanel()
         panel.allowsMultipleSelection = true
@@ -483,6 +497,11 @@ struct SocialFeedView: View {
             }
         }
     }
+    #else
+    private func selectImages() {
+        // iOS: image picker not implemented yet
+    }
+    #endif
 }
 
 // MARK: - Post Card
@@ -534,11 +553,11 @@ struct PostCard: View {
             
             // Images
             if !post.imagesData.isEmpty {
-                let images = post.imagesData.compactMap { NSImage(data: $0) }
+                let images = post.imagesData.compactMap { PlatformImage(data: $0) }
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: GentleSpacing.sm) {
                         ForEach(images.indices, id: \.self) { idx in
-                            Image(nsImage: images[idx])
+                            platformImage(images[idx])
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 160, height: 120)
@@ -638,4 +657,14 @@ struct PostCard: View {
             return "很久前"
         }
     }
+}
+
+// MARK: - Cross-platform Image helper
+
+func platformImage(_ image: PlatformImage) -> Image {
+#if canImport(AppKit)
+    Image(nsImage: image)
+#else
+    Image(uiImage: image)
+#endif
 }

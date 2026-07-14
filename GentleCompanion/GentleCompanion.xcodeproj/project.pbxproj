@@ -31,7 +31,6 @@
 		00C30E8429E8C05D0054451D /* Views/GardenGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8329E8C05D0054451D /* Views/GardenGame.swift */; };
 		00C30E8629E8C05D0054451D /* Views/RhythmGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8529E8C05D0054451D /* Views/RhythmGame.swift */; };
 		00C30E8829E8C05D0054451D /* Views/EfficiencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8729E8C05D0054451D /* Views/EfficiencyView.swift */; };
-		00C30E8A29E8C05D0054451D /* Views/SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8929E8C05D0054451D /* Views/SocialView.swift */; };
 		00C30E8C29E8C05D0054451D /* Views/PomodoroSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8B29E8C05D0054451D /* Views/PomodoroSubviews.swift */; };
 		00C30E8E29E8C05D0054451D /* Views/PomodoroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8D29E8C05D0054451D /* Views/PomodoroView.swift */; };
 		00C30E9029E8C05D0054451D /* Views/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */; };
@@ -43,37 +42,44 @@
 		00C30E9C29E8C05D0054451D /* Views/ActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9B29E8C05D0054451D /* Views/ActivationView.swift */; };
 		00C30E9E29E8C05D0054451D /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
 		00C30EA029E8C05D0054451D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C30E9F29E8C05D0054451D /* Assets.xcassets */; };
-		093206309C5082E78C6EE0A3 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E5D29E8C05D0054451D /* Design.swift */; };
-		10C243B00D627FB34885A767 /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		16B6BB557EEEEAEE25F3ACAC /* WeatherProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAE087415B21FBA9E327E67 /* WeatherProvider.swift */; };
-		1F7A6E8D445BCBF13D9DACE9 /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		2082914BBDD88E01E54EBC4E /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		2854AE0C64BB846CE00595DF /* Models/Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6B29E8C05D0054451D /* Models/Settings.swift */; };
-		353DF1D92A96F9E87ED1C36B /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
-		3FA760B51A196FE82AA5026B /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
-		4BDDA3C192C6DA2B40BAF5E6 /* Models/Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6B29E8C05D0054451D /* Models/Settings.swift */; };
-		638F5EE854DC0742EB1C9C79 /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		6591E1ECF2BA10BF6A80E4B4 /* ServerConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4635DA2EA0B52D811F45937F /* ServerConfigManager.swift */; };
-		70CB7C3E194910DDAB5C3FEC /* Models/NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6929E8C05D0054451D /* Models/NetworkService.swift */; };
-		83AF3164A952EA245D838193 /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		87C60840EACF6830DFCE46F4 /* ServerConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4635DA2EA0B52D811F45937F /* ServerConfigManager.swift */; };
-		92CBFD41272EED5DB0E01D74 /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
-		95F104316AC5E0808669FF00 /* ServerConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4635DA2EA0B52D811F45937F /* ServerConfigManager.swift */; };
-		9772FEED3F910CF24A223ED3 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCBA1A2B133461894BFE6D1 /* WeatherView.swift */; };
-		9AA04F60AF7B49972767AE4B /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		AB31ADDA027999DCC9D74202 /* Views/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */; };
-		B51DEDADCD8C0A72F940CB50 /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		B96992E7ABE4E1CAFBA35AA9 /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		C4CE268EE42F051C9E5E65DE /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		C55158C32CA8F107B8A7152A /* Models/NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6929E8C05D0054451D /* Models/NetworkService.swift */; };
-		C92549C518BE264215691B06 /* Views/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */; };
-		D57C4276F49D853FD43F1714 /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		D6423913A684E35646B09F2F /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		DFD639A51218D8D219AC88AA /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		E10D5EA63349CF4F93F66462 /* Views/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */; };
-		EE9E0BC8324591220A06A273 /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
-		F36512A4A9C433C2CF155BB8 /* Views/GentleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */; };
-		F9F422A2CDC5294CDBF3D502 /* Views/SocialFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9129E8C05D0054451D /* Views/SocialFeedView.swift */; };
+		046912E17C1F49959A7A6492 /* Models/NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6929E8C05D0054451D /* Models/NetworkService.swift */; };
+		1EE125F8B55D44C7B4ED1518 /* Models/AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6329E8C05D0054451D /* Models/AccountManager.swift */; };
+		20CBBDA0613C4587A1F2225B /* Views/PomodoroiOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E29F6F064044F9BA04C4515 /* Views/PomodoroiOSView.swift */; };
+		250B60157A554E6DA80534A4 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E5D29E8C05D0054451D /* Design.swift */; };
+		27AB3B21A18D4FB7970A68C7 /* WeatherProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAE087415B21FBA9E327E67 /* WeatherProvider.swift */; };
+		2F4ECF40D7EA498BB059C7D7 /* Views/GentiOSMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF2DC0B6F9144989CD01410 /* Views/GentiOSMainView.swift */; };
+		341A56C6DDFD4CC2BB4A8BAF /* Views/GentiOSWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150B1051E2F4B4EA910356F /* Views/GentiOSWallView.swift */; };
+		47846BE46D6D4F659D033550 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCBA1A2B133461894BFE6D1 /* WeatherView.swift */; };
+		4B3C0C4A27D3401799758610 /* Views/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */; };
+		56A28742D8E45EF29095F4D7 /* GentiOSMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B022AA6BC12D757CCB988C /* GentiOSMessageView.swift */; };
+		57F656119FCC4324B93E4FEC /* Models/GentleWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6729E8C05D0054451D /* Models/GentleWall.swift */; };
+		61DD0052B7FF1418BE3C93DB /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64999D45DECA6F43BAFB809 /* WelcomeView.swift */; };
+		66C5479C16B44CF6A952AC8A /* Views/GentiOSHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089AF1D023F44A15BB42540C /* Views/GentiOSHomeView.swift */; };
+		68FFD2F36CEF4A0395D20C5D /* Models/Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6B29E8C05D0054451D /* Models/Settings.swift */; };
+		71FB4E055E854B7CA5712734 /* Views/GentleWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E7529E8C05D0054451D /* Views/GentleWallView.swift */; };
+		7220C745E6E64DF3B6A9C587 /* Models/AppMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6529E8C05D0054451D /* Models/AppMode.swift */; };
+		8C95AEEFAAD44D068CCE79E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C30E9F29E8C05D0054451D /* Assets.xcassets */; };
+		9103C01BD4CF43F0BEE851A8 /* Views/AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD68110FEB4AAF95822782 /* Views/AgreementView.swift */; };
+		9829CEBDFBDA4C66822E9104 /* GentiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27058957A748EC983FA6CF /* GentiOSApp.swift */; };
+		99551E61A30447EFB5CEE60A /* Views/SocialFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9129E8C05D0054451D /* Views/SocialFeedView.swift */; };
+		9B834BD9A2334EEDA472AD59 /* Views/SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9329E8C05D0054451D /* Views/SplashView.swift */; };
+		B272FB43EAA14BCCB93507A0 /* Views/BreathingiOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6599403C16D43408EE4C21F /* Views/BreathingiOSView.swift */; };
+		B9E677B172AA4ECF99D2D535 /* ServerConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4635DA2EA0B52D811F45937F /* ServerConfigManager.swift */; };
+		BB80FC19372F470EAA7E0C0A /* Models/PomodoroActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF4619C22A44F4B0F1935D /* Models/PomodoroActivityAttributes.swift */; };
+		BC0416AE0CAF4B9A96B6BC24 /* Views/AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E7129E8C05D0054451D /* Views/AuthView.swift */; };
+		BE18886D466043B5BD316B0A /* Models/Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6129E8C05D0054451D /* Models/Emotion.swift */; };
+		C03ED692B20B4C7D8ACDAFAA /* Views/GentiOSProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B458BD3CF3B4C229B4AE343 /* Views/GentiOSProfileView.swift */; };
+		C353115878F542DEE07BC100 /* ServerSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576ACA348C09ED905FF7BE37 /* ServerSetupView.swift */; };
+		C695C29D43AD469E9A3CB7F1 /* Models/SocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6D29E8C05D0054451D /* Models/SocialService.swift */; };
+		C8EAA94F92EA4B6EB9F01A10 /* Views/AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E7329E8C05D0054451D /* Views/AccountView.swift */; };
+		DE3221A3E41F432096390058 /* Views/ActivationFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E6F29E8C05D0054451D /* Views/ActivationFlowView.swift */; };
+		E4598B4E2B6A4E218E8BB24C /* Views/ActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E9B29E8C05D0054451D /* Views/ActivationView.swift */; };
+		E67E44AC5C094818A55510DA /* Views/GentiOSSocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F0FD6739CD412385652B71 /* Views/GentiOSSocialView.swift */; };
+		EAD24044320F4AFFA72DBE0F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C30E5F29E8C05D0054451D /* Extensions.swift */; };
+		PWGBF010000000000000001 /* PomodoroWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = PWGFR020000000000000001 /* PomodoroWidget.swift */; };
+		PWGBF020000000000000001 /* PomodoroWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = PWGFR010000000000000001 /* PomodoroWidgetBundle.swift */; };
+		PWGBF030000000000000001 /* Models/PomodoroActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAF4619C22A44F4B0F1935D /* Models/PomodoroActivityAttributes.swift */; };
+		PWGBF040000000000000001 /* (null) in CopyFiles */ = {isa = PBXBuildFile; fileRef = PWGFR040000000000000001; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		RES00001000000000000001 /* Resources/壁炉.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = RES00002000000000000001 /* Resources/壁炉.mp3 */; };
 		RES00002000000000000002 /* Resources/风声.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = RES00003000000000000002 /* Resources/风声.mp3 */; };
 		RES00003000000000000003 /* Resources/海浪.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = RES00004000000000000003 /* Resources/海浪.mp3 */; };
@@ -82,7 +88,31 @@
 		RES00006000000000000006 /* Resources/AppIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = RES00007000000000000006 /* Resources/AppIcon.svg */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		PWGTDP01000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C30E3B29E8C05D0054451D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = PWGNTRG0000000000000001;
+			remoteInfo = PomodoroWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		PWGCBL01000000000000001 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				PWGBF040000000000000001 /* (null) in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		00C30E4329E8C05D0054451D /* GentleCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GentleCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C30E5929E8C05D0054451D /* GentleCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentleCompanionApp.swift; sourceTree = "<group>"; };
 		00C30E5B29E8C05D0054451D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		00C30E5D29E8C05D0054451D /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
@@ -119,15 +149,31 @@
 		00C30E9B29E8C05D0054451D /* Views/ActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ActivationView.swift; sourceTree = "<group>"; };
 		00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/GentleMainView.swift; sourceTree = "<group>"; };
 		00C30E9F29E8C05D0054451D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D6866F8808FD74048976957 /* manifest.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = manifest.json; path = build/XCBuildData/11f6b9e2873fdab55cdb005acd3c2638.xcbuilddata/manifest.json; sourceTree = SOURCE_ROOT; };
-		0E6442800F26A43BEC125971 /* build-request.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = "build-request.json"; path = "build/XCBuildData/11f6b9e2873fdab55cdb005acd3c2638.xcbuilddata/build-request.json"; sourceTree = SOURCE_ROOT; };
+		089AF1D023F44A15BB42540C /* Views/GentiOSHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/GentiOSHomeView.swift; sourceTree = "<group>"; };
+		1AF2DC0B6F9144989CD01410 /* Views/GentiOSMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/GentiOSMainView.swift; sourceTree = "<group>"; };
+		1C27058957A748EC983FA6CF /* GentiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentiOSApp.swift; sourceTree = "<group>"; };
+		2E29F6F064044F9BA04C4515 /* Views/PomodoroiOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/PomodoroiOSView.swift; sourceTree = "<group>"; };
 		4635DA2EA0B52D811F45937F /* ServerConfigManager.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = ServerConfigManager.swift; path = Models/ServerConfigManager.swift; sourceTree = SOURCE_ROOT; };
+		4B458BD3CF3B4C229B4AE343 /* Views/GentiOSProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/GentiOSProfileView.swift; sourceTree = "<group>"; };
+		4B4766858E76B0FD61DE1255 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; lastKnownFileType = text.plist; name = Info.plist; path = build/GentiOS.xcarchive/Info.plist; sourceTree = SOURCE_ROOT; };
 		4CCBA1A2B133461894BFE6D1 /* WeatherView.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = WeatherView.swift; path = Views/WeatherView.swift; sourceTree = SOURCE_ROOT; };
-		85786384A85186BBA54368AD /* target-graph.txt */ = {isa = PBXFileReference; explicitFileType = text; lastKnownFileType = text; name = "target-graph.txt"; path = "build/XCBuildData/11f6b9e2873fdab55cdb005acd3c2638.xcbuilddata/target-graph.txt"; sourceTree = SOURCE_ROOT; };
+		4E1C80881A5E5E65F647C215 /* GentiOS.yml */ = {isa = PBXFileReference; explicitFileType = text.yaml; lastKnownFileType = text.yaml; name = GentiOS.yml; path = build/GentiOS.xcarchive/dSYMs/GentiOS.app.dSYM/Contents/Resources/Relocations/aarch64/GentiOS.yml; sourceTree = SOURCE_ROOT; };
+		5141841627D54F175E7F3AB8 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; lastKnownFileType = text.plist; name = Info.plist; path = build/GentiOS.xcarchive/dSYMs/PomodoroWidget.appex.dSYM/Contents/Info.plist; sourceTree = SOURCE_ROOT; };
+		55AF7EFA1E9B7DE3CE5352BC /* PomodoroWidget.yml */ = {isa = PBXFileReference; explicitFileType = text.yaml; lastKnownFileType = text.yaml; name = PomodoroWidget.yml; path = build/GentiOS.xcarchive/dSYMs/PomodoroWidget.appex.dSYM/Contents/Resources/Relocations/aarch64/PomodoroWidget.yml; sourceTree = SOURCE_ROOT; };
+		576ACA348C09ED905FF7BE37 /* ServerSetupView.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = ServerSetupView.swift; path = Views/ServerSetupView.swift; sourceTree = SOURCE_ROOT; };
+		77CD68110FEB4AAF95822782 /* Views/AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/AgreementView.swift; sourceTree = "<group>"; };
 		9490F648B2BBE63FF58BAC0F /* GentleCompanion.entitlements */ = {isa = PBXFileReference; explicitFileType = text.plist.entitlements; lastKnownFileType = text.plist.entitlements; name = GentleCompanion.entitlements; path = GentleCompanion.entitlements; sourceTree = SOURCE_ROOT; };
+		B64999D45DECA6F43BAFB809 /* WelcomeView.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = WelcomeView.swift; path = Views/WelcomeView.swift; sourceTree = SOURCE_ROOT; };
 		BFAE087415B21FBA9E327E67 /* WeatherProvider.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = WeatherProvider.swift; path = Models/WeatherProvider.swift; sourceTree = SOURCE_ROOT; };
-		DBB28FF2D39D7941F292926F /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; lastKnownFileType = text.plist; name = Info.plist; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		CFAF4619C22A44F4B0F1935D /* Models/PomodoroActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/PomodoroActivityAttributes.swift; sourceTree = "<group>"; };
+		D150B1051E2F4B4EA910356F /* Views/GentiOSWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/GentiOSWallView.swift; sourceTree = "<group>"; };
+		DBB28FF2D39D7941F292926F /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; lastKnownFileType = text.plist; name = Info.plist; path = build/GentiOS.xcarchive/dSYMs/GentiOS.app.dSYM/Contents/Info.plist; sourceTree = SOURCE_ROOT; };
 		DC811C48A7FA24EF6463D498 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
+		E6F0FD6739CD412385652B71 /* Views/GentiOSSocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/GentiOSSocialView.swift; sourceTree = "<group>"; };
+		E8B022AA6BC12D757CCB988C /* GentiOSMessageView.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = GentiOSMessageView.swift; path = Views/GentiOSMessageView.swift; sourceTree = SOURCE_ROOT; };
+		F6599403C16D43408EE4C21F /* Views/BreathingiOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/BreathingiOSView.swift; sourceTree = "<group>"; };
+		PWGFR010000000000000001 /* PomodoroWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroWidgetBundle.swift; sourceTree = "<group>"; };
+		PWGFR020000000000000001 /* PomodoroWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroWidget.swift; sourceTree = "<group>"; };
 		RES00002000000000000001 /* Resources/壁炉.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Resources/壁炉.mp3"; sourceTree = "<group>"; };
 		RES00003000000000000002 /* Resources/风声.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Resources/风声.mp3"; sourceTree = "<group>"; };
 		RES00004000000000000003 /* Resources/海浪.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Resources/海浪.mp3"; sourceTree = "<group>"; };
@@ -144,6 +190,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		IOSTTG0000000000000006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		PWGFBP01000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -151,23 +211,17 @@
 			isa = PBXGroup;
 			children = (
 				00C30E3E29E8C05D0054451D /* GentleCompanion */,
+				PWGGP010000000000000001 /* PomodoroWidget */,
 				00C30EA829E8C05D0054451D /* Products */,
-				DC811C48A7FA24EF6463D498 /* Package.swift */,
 				9490F648B2BBE63FF58BAC0F /* GentleCompanion.entitlements */,
-				00C30E5D29E8C05D0054451D /* Design.swift */,
-				00C30E6D29E8C05D0054451D /* Models/SocialService.swift */,
-				00C30E9129E8C05D0054451D /* Views/SocialFeedView.swift */,
-				00C30E8F29E8C05D0054451D /* Views/SettingsView.swift */,
+				E8B022AA6BC12D757CCB988C /* GentiOSMessageView.swift */,
+				B64999D45DECA6F43BAFB809 /* WelcomeView.swift */,
+				576ACA348C09ED905FF7BE37 /* ServerSetupView.swift */,
 				DBB28FF2D39D7941F292926F /* Info.plist */,
-				00C30E6929E8C05D0054451D /* Models/NetworkService.swift */,
-				4635DA2EA0B52D811F45937F /* ServerConfigManager.swift */,
-				BFAE087415B21FBA9E327E67 /* WeatherProvider.swift */,
-				00C30E6B29E8C05D0054451D /* Models/Settings.swift */,
-				0D6866F8808FD74048976957 /* manifest.json */,
-				85786384A85186BBA54368AD /* target-graph.txt */,
-				0E6442800F26A43BEC125971 /* build-request.json */,
-				00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */,
-				4CCBA1A2B133461894BFE6D1 /* WeatherView.swift */,
+				55AF7EFA1E9B7DE3CE5352BC /* PomodoroWidget.yml */,
+				4E1C80881A5E5E65F647C215 /* GentiOS.yml */,
+				5141841627D54F175E7F3AB8 /* Info.plist */,
+				4B4766858E76B0FD61DE1255 /* Info.plist */,
 			);
 			path = "/Users/ztc/Desktop/APP 2/GentleCompanion";
 			sourceTree = "<absolute>";
@@ -197,6 +251,8 @@
 				00C30E6929E8C05D0054451D /* Models/NetworkService.swift */,
 				00C30E6B29E8C05D0054451D /* Models/Settings.swift */,
 				00C30E6D29E8C05D0054451D /* Models/SocialService.swift */,
+				4635DA2EA0B52D811F45937F /* ServerConfigManager.swift */,
+				BFAE087415B21FBA9E327E67 /* WeatherProvider.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -205,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				00C30E6F29E8C05D0054451D /* Views/ActivationFlowView.swift */,
+				77CD68110FEB4AAF95822782 /* Views/AgreementView.swift */,
 				00C30E7129E8C05D0054451D /* Views/AuthView.swift */,
 				00C30E7329E8C05D0054451D /* Views/AccountView.swift */,
 				00C30E7529E8C05D0054451D /* Views/GentleWallView.swift */,
@@ -228,6 +285,7 @@
 				00C30E9929E8C05D0054451D /* Views/BreathingView.swift */,
 				00C30E9B29E8C05D0054451D /* Views/ActivationView.swift */,
 				00C30E9D29E8C05D0054451D /* Views/GentleMainView.swift */,
+				4CCBA1A2B133461894BFE6D1 /* WeatherView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -235,8 +293,18 @@
 		00C30EA829E8C05D0054451D /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				00C30E4329E8C05D0054451D /* GentleCompanion.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		PWGGP010000000000000001 /* PomodoroWidget */ = {
+			isa = PBXGroup;
+			children = (
+				PWGFR010000000000000001 /* PomodoroWidgetBundle.swift */,
+				PWGFR020000000000000001 /* PomodoroWidget.swift */,
+			);
+			path = PomodoroWidget;
 			sourceTree = "<group>";
 		};
 		RESGROUP1000000000000001 /* Resources */ = {
@@ -269,7 +337,44 @@
 			);
 			name = GentleCompanion;
 			productName = GentleCompanion;
+			productReference = 00C30E4329E8C05D0054451D /* GentleCompanion.app */;
 			productType = "com.apple.product-type.application";
+		};
+		IOSTTG0000000000000001 /* GentiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE293CA35DB4868A3196804 /* Build configuration list for PBXNativeTarget "GentiOS" */;
+			buildPhases = (
+				IOSTTG0000000000000004 /* Sources */,
+				IOSTTG0000000000000006 /* Frameworks */,
+				IOSTTG0000000000000005 /* Resources */,
+				PWGCBL01000000000000001 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				PWGTD001000000000000001 /* PBXTargetDependency */,
+			);
+			name = GentiOS;
+			productName = GentiOS;
+			productReference = IOSTTG000000000000000A;
+			productType = "com.apple.product-type.application";
+		};
+		PWGNTRG0000000000000001 /* PomodoroWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = PWGCLT01000000000000001 /* Build configuration list for PBXNativeTarget "PomodoroWidget" */;
+			buildPhases = (
+				PWGSBP01000000000000001 /* Sources */,
+				PWGFBP01000000000000001 /* Frameworks */,
+				PWGRBP01000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PomodoroWidget;
+			productName = PomodoroWidget;
+			productReference = PWGFR040000000000000001;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -282,6 +387,9 @@
 				LastUpgradeCheck = 1560;
 				TargetAttributes = {
 					00C30E4429E8C05D0054451D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					PWGNTRG0000000000000001 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -299,6 +407,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				IOSTTG0000000000000001 /* GentiOS */,
+				PWGNTRG0000000000000001 /* PomodoroWidget */,
 				00C30E4429E8C05D0054451D /* GentleCompanion */,
 			);
 		};
@@ -316,6 +426,21 @@
 				RES00004000000000000004 /* Resources/雨声.mp3 in Resources */,
 				RES00005000000000000005 /* Resources/AppIcon.png in Resources */,
 				RES00006000000000000006 /* Resources/AppIcon.svg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		IOSTTG0000000000000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C95AEEFAAD44D068CCE79E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		PWGRBP01000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,63 +464,95 @@
 				00C30E6E29E8C05D0054451D /* Models/SocialService.swift in Sources */,
 				00C30E7029E8C05D0054451D /* Views/ActivationFlowView.swift in Sources */,
 				00C30E7229E8C05D0054451D /* Views/AuthView.swift in Sources */,
+				9103C01BD4CF43F0BEE851A8 /* Views/AgreementView.swift in Sources */,
 				00C30E7429E8C05D0054451D /* Views/AccountView.swift in Sources */,
 				00C30E7629E8C05D0054451D /* Views/GentleWallView.swift in Sources */,
-				00C30E7829E8C05D0054451D /* Views/MainView.swift in Sources */,
-				00C30E7A29E8C05D0054451D /* Views/NewMainView.swift in Sources */,
-				00C30E7C29E8C05D0054451D /* Views/ModeSwitchView.swift in Sources */,
-				00C30E7E29E8C05D0054451D /* Views/EntertainmentView.swift in Sources */,
-				00C30E8029E8C05D0054451D /* Views/MoodQuestionView.swift in Sources */,
-				00C30E8229E8C05D0054451D /* Views/BubblePopGame.swift in Sources */,
-				00C30E8429E8C05D0054451D /* Views/GardenGame.swift in Sources */,
-				00C30E8629E8C05D0054451D /* Views/RhythmGame.swift in Sources */,
-				00C30E8829E8C05D0054451D /* Views/EfficiencyView.swift in Sources */,
-				00C30E8A29E8C05D0054451D /* Views/SocialView.swift in Sources */,
-				00C30E8C29E8C05D0054451D /* Views/PomodoroSubviews.swift in Sources */,
-				00C30E8E29E8C05D0054451D /* Views/PomodoroView.swift in Sources */,
 				00C30E9029E8C05D0054451D /* Views/SettingsView.swift in Sources */,
 				00C30E9229E8C05D0054451D /* Views/SocialFeedView.swift in Sources */,
 				00C30E9429E8C05D0054451D /* Views/SplashView.swift in Sources */,
-				00C30E9629E8C05D0054451D /* Views/TimeModeView.swift in Sources */,
-				00C30E9829E8C05D0054451D /* Views/ProfileView.swift in Sources */,
+				00C30E7E29E8C05D0054451D /* Views/EntertainmentView.swift in Sources */,
+				00C30E8E29E8C05D0054451D /* Views/PomodoroView.swift in Sources */,
 				00C30E9A29E8C05D0054451D /* Views/BreathingView.swift in Sources */,
-				00C30E9C29E8C05D0054451D /* Views/ActivationView.swift in Sources */,
 				00C30E9E29E8C05D0054451D /* Views/GentleMainView.swift in Sources */,
-				093206309C5082E78C6EE0A3 /* Design.swift in Sources */,
-				EE9E0BC8324591220A06A273 /* Models/SocialService.swift in Sources */,
-				3FA760B51A196FE82AA5026B /* Models/SocialService.swift in Sources */,
-				F9F422A2CDC5294CDBF3D502 /* Views/SocialFeedView.swift in Sources */,
-				353DF1D92A96F9E87ED1C36B /* Models/SocialService.swift in Sources */,
-				92CBFD41272EED5DB0E01D74 /* Models/SocialService.swift in Sources */,
-				C92549C518BE264215691B06 /* Views/SettingsView.swift in Sources */,
-				C55158C32CA8F107B8A7152A /* Models/NetworkService.swift in Sources */,
-				AB31ADDA027999DCC9D74202 /* Views/SettingsView.swift in Sources */,
-				70CB7C3E194910DDAB5C3FEC /* Models/NetworkService.swift in Sources */,
-				E10D5EA63349CF4F93F66462 /* Views/SettingsView.swift in Sources */,
-				95F104316AC5E0808669FF00 /* ServerConfigManager.swift in Sources */,
-				16B6BB557EEEEAEE25F3ACAC /* WeatherProvider.swift in Sources */,
-				4BDDA3C192C6DA2B40BAF5E6 /* Models/Settings.swift in Sources */,
-				6591E1ECF2BA10BF6A80E4B4 /* ServerConfigManager.swift in Sources */,
-				9AA04F60AF7B49972767AE4B /* Views/GentleMainView.swift in Sources */,
-				2082914BBDD88E01E54EBC4E /* Views/GentleMainView.swift in Sources */,
-				9772FEED3F910CF24A223ED3 /* WeatherView.swift in Sources */,
-				87C60840EACF6830DFCE46F4 /* ServerConfigManager.swift in Sources */,
-				2854AE0C64BB846CE00595DF /* Models/Settings.swift in Sources */,
-				638F5EE854DC0742EB1C9C79 /* Views/GentleMainView.swift in Sources */,
-				B96992E7ABE4E1CAFBA35AA9 /* Views/GentleMainView.swift in Sources */,
-				83AF3164A952EA245D838193 /* Views/GentleMainView.swift in Sources */,
-				1F7A6E8D445BCBF13D9DACE9 /* Views/GentleMainView.swift in Sources */,
-				B51DEDADCD8C0A72F940CB50 /* Views/GentleMainView.swift in Sources */,
-				DFD639A51218D8D219AC88AA /* Views/GentleMainView.swift in Sources */,
-				D57C4276F49D853FD43F1714 /* Views/GentleMainView.swift in Sources */,
-				F36512A4A9C433C2CF155BB8 /* Views/GentleMainView.swift in Sources */,
-				D6423913A684E35646B09F2F /* Views/GentleMainView.swift in Sources */,
-				10C243B00D627FB34885A767 /* Views/GentleMainView.swift in Sources */,
-				C4CE268EE42F051C9E5E65DE /* Views/GentleMainView.swift in Sources */,
+				00C30E9C29E8C05D0054451D /* Views/ActivationView.swift in Sources */,
+				00C30E9829E8C05D0054451D /* Views/ProfileView.swift in Sources */,
+				00C30E9629E8C05D0054451D /* Views/TimeModeView.swift in Sources */,
+				00C30E8C29E8C05D0054451D /* Views/PomodoroSubviews.swift in Sources */,
+				00C30E8829E8C05D0054451D /* Views/EfficiencyView.swift in Sources */,
+				00C30E8629E8C05D0054451D /* Views/RhythmGame.swift in Sources */,
+				00C30E8429E8C05D0054451D /* Views/GardenGame.swift in Sources */,
+				00C30E8229E8C05D0054451D /* Views/BubblePopGame.swift in Sources */,
+				00C30E8029E8C05D0054451D /* Views/MoodQuestionView.swift in Sources */,
+				00C30E7C29E8C05D0054451D /* Views/ModeSwitchView.swift in Sources */,
+				00C30E7A29E8C05D0054451D /* Views/NewMainView.swift in Sources */,
+				00C30E7829E8C05D0054451D /* Views/MainView.swift in Sources */,
+				B9E677B172AA4ECF99D2D535 /* ServerConfigManager.swift in Sources */,
+				C353115878F542DEE07BC100 /* ServerSetupView.swift in Sources */,
+				61DD0052B7FF1418BE3C93DB /* WelcomeView.swift in Sources */,
+				27AB3B21A18D4FB7970A68C7 /* WeatherProvider.swift in Sources */,
+				47846BE46D6D4F659D033550 /* WeatherView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		IOSTTG0000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9829CEBDFBDA4C66822E9104 /* GentiOSApp.swift in Sources */,
+				250B60157A554E6DA80534A4 /* Design.swift in Sources */,
+				EAD24044320F4AFFA72DBE0F /* Extensions.swift in Sources */,
+				1EE125F8B55D44C7B4ED1518 /* Models/AccountManager.swift in Sources */,
+				7220C745E6E64DF3B6A9C587 /* Models/AppMode.swift in Sources */,
+				BE18886D466043B5BD316B0A /* Models/Emotion.swift in Sources */,
+				57F656119FCC4324B93E4FEC /* Models/GentleWall.swift in Sources */,
+				046912E17C1F49959A7A6492 /* Models/NetworkService.swift in Sources */,
+				B9E677B172AA4ECF99D2D535 /* ServerConfigManager.swift in Sources */,
+				68FFD2F36CEF4A0395D20C5D /* Models/Settings.swift in Sources */,
+				C695C29D43AD469E9A3CB7F1 /* Models/SocialService.swift in Sources */,
+				27AB3B21A18D4FB7970A68C7 /* WeatherProvider.swift in Sources */,
+				BB80FC19372F470EAA7E0C0A /* Models/PomodoroActivityAttributes.swift in Sources */,
+				DE3221A3E41F432096390058 /* Views/ActivationFlowView.swift in Sources */,
+				E4598B4E2B6A4E218E8BB24C /* Views/ActivationView.swift in Sources */,
+				9103C01BD4CF43F0BEE851A8 /* Views/AgreementView.swift in Sources */,
+				BC0416AE0CAF4B9A96B6BC24 /* Views/AuthView.swift in Sources */,
+				B272FB43EAA14BCCB93507A0 /* Views/BreathingiOSView.swift in Sources */,
+				66C5479C16B44CF6A952AC8A /* Views/GentiOSHomeView.swift in Sources */,
+				2F4ECF40D7EA498BB059C7D7 /* Views/GentiOSMainView.swift in Sources */,
+				C03ED692B20B4C7D8ACDAFAA /* Views/GentiOSProfileView.swift in Sources */,
+				E67E44AC5C094818A55510DA /* Views/GentiOSSocialView.swift in Sources */,
+				341A56C6DDFD4CC2BB4A8BAF /* Views/GentiOSWallView.swift in Sources */,
+				20CBBDA0613C4587A1F2225B /* Views/PomodoroiOSView.swift in Sources */,
+				4B3C0C4A27D3401799758610 /* Views/SettingsView.swift in Sources */,
+				99551E61A30447EFB5CEE60A /* Views/SocialFeedView.swift in Sources */,
+				9B834BD9A2334EEDA472AD59 /* Views/SplashView.swift in Sources */,
+				47846BE46D6D4F659D033550 /* WeatherView.swift in Sources */,
+				C8EAA94F92EA4B6EB9F01A10 /* Views/AccountView.swift in Sources */,
+				71FB4E055E854B7CA5712734 /* Views/GentleWallView.swift in Sources */,
+				56A28742D8E45EF29095F4D7 /* GentiOSMessageView.swift in Sources */,
+				61DD0052B7FF1418BE3C93DB /* WelcomeView.swift in Sources */,
+				C353115878F542DEE07BC100 /* ServerSetupView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		PWGSBP01000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				PWGBF010000000000000001 /* PomodoroWidget.swift in Sources */,
+				PWGBF020000000000000001 /* PomodoroWidgetBundle.swift in Sources */,
+				PWGBF030000000000000001 /* Models/PomodoroActivityAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		PWGTD001000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = PWGNTRG0000000000000001 /* PomodoroWidget */;
+			targetProxy = PWGTDP01000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		00C30EAB29E8C05D0054451D /* Debug */ = {
@@ -458,6 +615,132 @@
 			};
 			name = Release;
 		};
+		IOSTTG0000000000000002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W9G526P4U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Info-iOS.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "温柔点";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GentleCompanion.GentiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		IOSTTG0000000000000003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W9G526P4U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Info-iOS.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "温柔点";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GentleCompanion.GentiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		PWGBCT01000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W9G526P4U;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PomodoroWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "温柔点番茄钟";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GentleCompanion.GentiOS.PomodoroWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		PWGBCT02000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W9G526P4U;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PomodoroWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "温柔点番茄钟";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GentleCompanion.GentiOS.PomodoroWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -475,6 +758,24 @@
 			buildConfigurations = (
 				00C30EAB29E8C05D0054451D /* Debug */,
 				00C30EAC29E8C05D0054451D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE293CA35DB4868A3196804 /* Build configuration list for PBXNativeTarget "GentiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				IOSTTG0000000000000002 /* Debug */,
+				IOSTTG0000000000000003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		PWGCLT01000000000000001 /* Build configuration list for PBXNativeTarget "PomodoroWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				PWGBCT01000000000000001 /* Debug */,
+				PWGBCT02000000000000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

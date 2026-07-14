@@ -14,7 +14,7 @@ class ServerConfigManager: @unchecked Sendable {
     private let serverPortKey = "gentle_server_port"
     private let serverUseHTTPSKey = "gentle_server_use_https"
     
-    private let defaultHost = "127.0.0.1"
+    private let defaultHost = "114.55.132.45"
     private let defaultPort = 8000
     private let defaultUseHTTPS = false
     

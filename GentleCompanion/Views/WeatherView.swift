@@ -77,6 +77,7 @@ struct WeatherView: View {
                 appearAnimation = true
             }
         }
+        #if os(macOS)
         .onExitCommand {
             if showCityPicker {
                 closeCityPicker()
@@ -84,6 +85,7 @@ struct WeatherView: View {
                 withAnimation(.easeInOut(duration: 0.25)) { isPresented = false }
             }
         }
+        #endif
     }
     
     // MARK: - Weather Effects (iPhone-style)

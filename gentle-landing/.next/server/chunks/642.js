@@ -1,0 +1,1 @@
+"use strict";exports.id=642,exports.ids=[642],exports.modules={4642:(e,t,s)=>{s.r(t),s.d(t,{default:()=>r});let r=(0,s(5347).createProxy)(String.raw`/Users/ztc/Desktop/APP 2/gentle-landing/components/Weather.tsx#default`)}};

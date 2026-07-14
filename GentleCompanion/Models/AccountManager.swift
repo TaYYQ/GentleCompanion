@@ -25,6 +25,8 @@ struct Account: Codable, Identifiable, Equatable {
     var birthday: Date?
     var weight: Double?         // kg
     var interests: [Interest]
+    var bio: String
+    var avatar: String
     var onboardingCompleted: Bool
 
     init(
@@ -39,6 +41,8 @@ struct Account: Codable, Identifiable, Equatable {
         birthday: Date? = nil,
         weight: Double? = nil,
         interests: [Interest] = [],
+        bio: String = "",
+        avatar: String = "🌸",
         onboardingCompleted: Bool = false
     ) {
         self.id = id
@@ -52,6 +56,8 @@ struct Account: Codable, Identifiable, Equatable {
         self.birthday = birthday
         self.weight = weight
         self.interests = interests
+        self.bio = bio
+        self.avatar = avatar
         self.onboardingCompleted = onboardingCompleted
     }
 }
@@ -294,6 +300,15 @@ final class AccountManager: ObservableObject {
         updateAccount(account)
     }
 
+    func updateBasicProfile(username: String, bio: String, avatar: String, gender: Gender?) {
+        guard var account = currentAccount else { return }
+        account.username = username
+        account.bio = bio
+        account.avatar = avatar
+        account.gender = gender
+        updateAccount(account)
+    }
+
     func completeOnboarding() {
         guard var account = currentAccount else { return }
         account.onboardingCompleted = true
@@ -347,18 +362,16 @@ final class AccountManager: ObservableObject {
     }
 
     private func loadAccounts() {
-        guard let data = UserDefaults.standard.dictionary(forKey: ACCOUNTS_KEY),
-              let json = try? JSONSerialization.data(withJSONObject: data),
-              let decoded = try? JSONDecoder().decode([Account].self, from: json) else {
+        guard let data = UserDefaults.standard.data(forKey: ACCOUNTS_KEY),
+              let decoded = try? JSONDecoder().decode([Account].self, from: data) else {
             accounts = []; return
         }
         accounts = decoded
     }
 
     private func saveAccounts() {
-        guard let data = try? JSONEncoder().encode(accounts),
-              let dict  = try? JSONSerialization.jsonObject(with: data) else { return }
-        UserDefaults.standard.set(dict, forKey: ACCOUNTS_KEY)
+        guard let data = try? JSONEncoder().encode(accounts) else { return }
+        UserDefaults.standard.set(data, forKey: ACCOUNTS_KEY)
     }
 
     private func loadCurrentAccount() {

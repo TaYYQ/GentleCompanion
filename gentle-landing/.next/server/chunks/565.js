@@ -1,0 +1,1 @@
+"use strict";exports.id=565,exports.ids=[565],exports.modules={8565:(e,t,s)=>{s.r(t),s.d(t,{default:()=>o});let o=(0,s(5347).createProxy)(String.raw`/Users/ztc/Desktop/APP 2/gentle-landing/components/Download.tsx#default`)}};

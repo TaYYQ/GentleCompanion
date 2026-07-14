@@ -93,6 +93,14 @@ deploy_to_server.sh
 GentleCompanion/.gitignore
 
 # ====================
+# Node.js / Next.js
+# ====================
+node_modules/
+.next/
+out/
+*.zip
+
+# ====================
 # Logs
 # ====================
 *.log
